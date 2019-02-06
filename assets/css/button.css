@@ -13,3 +13,5 @@
     color: #222;
     transform: scale(0.85);
 }
+
+button:focus { outline: none; }

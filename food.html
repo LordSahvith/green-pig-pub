@@ -1,1574 +1,1717 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Food | Green Pig Pub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-    
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="./assets/css/sub_nav.css">
-    <link rel="stylesheet" href="./assets/css/food.css">
-    <link rel="stylesheet" href="./assets/css/scrolling_nav.css">
-    <link rel="stylesheet" href="./assets/css/menu_options.css">
-    <link rel="stylesheet" href="./assets/css/menu_item.css">
-    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
-    
+	<meta charset="UTF-8">
+	<title>Food | Green Pig Pub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="favicon.ico" />
+
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="stylesheet" href="./assets/css/sub_nav.css">
+	<link rel="stylesheet" href="./assets/css/food.css">
+	<link rel="stylesheet" href="./assets/css/scrolling_nav.css">
+	<link rel="stylesheet" href="./assets/css/menu_options.css">
+	<link rel="stylesheet" href="./assets/css/menu_item.css">
+	<link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
+
 </head>
+
 <body>
-   
-    <!-- =========== MAIN NAV ====================== -->
-    
-    <nav class="nav-bar">
-        
-        <div id="mobile-nav" class="overlay">            
-            <div class="overlay-content"> 
-               <div class="container">
-                   
-                    <a href="about.html">About</a>
-                    <a href="menus.html">Menus</a>
-                    <a class="sub-class" href="food.html">Food</a>
-                    <a class="sub-class" href="drinks.html">Drinks</a>
-                    <a href="events.html">Events</a>
-                    <a href="contact.html">Contact</a>                
-                   
-               </div>               
-            </div>
-            
-        </div> <!-- mobile-nav -->
-        
-        <div class="mobile-icon" onclick="toggleNav()">                
-           <div class="fade-up">
-                <div class="toggle-button"> 
-                    <div class="menu-bar menu-bar-top"></div>
-                    <div class="menu-bar menu-bar-middle"></div>
-                    <div class="menu-bar menu-bar-bottom"></div>     
-                </div>               
-           </div>                      
-        </div>    
-        
-        <a href="index.html"><img class="logo logo-mobile" src="./assets/img/logo.png" alt="The Green Pig Pub Logo"></a>
-        
-        <div class="main-nav fade-down">
-            
-            <ul class="nav-items">
-                <li class="nav-item"><a href="about.html">About</a></li>                                
-                <li class="dropdown-btn nav-item">
-                    <a href="menus.html">Menus <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown">
-                            <li><a href="food.html">Food</a></li>
-                            <li><a href="drinks.html">Drinks</a></li>
-                        </ul>
-                </li>                                                
-                <a href="index.html"><img class="logo logo-main" src="./assets/img/logo.png" alt="The Green Pig Pub Logo"></a>    
-                <li class="nav-item hide-home"><a href="index.html">Home</a></li>                                
-                <li class="nav-item"><a href="events.html">Events</a></li>                                
-                <li class="nav-item"><a href="contact.html">Contact</a></li>                                
-            </ul>
-            
-        </div> <!-- main-nav -->
-        
-    </nav>
-        
-    
-    
-    <!-- ======= HERO ========================== -->
-  
-    <div class="fade-down">
-        
-        <section class="hero hero-food">
-
-            <div class="hero-container">
-
-                <h2>Food</h2>
-
-            </div>
-
-        </section>
-        
-    </div>
-   
-   
-   
-   
-    <!-- =========== PAGE WELCOME ====================== -->
-    
-    <section class="welcome food-welcome">
-        
-        <div class="container">
-           
-           <div class="fade-left">
-               
-                <p>Our menu was handcrafted by Jose Guadarrama-Guardarrama and prepared from scratch daily.
-                Items highlighted in <span class="pig-favorite">green</span> are pig favorites and items with * next to them have gluten free options.</p>
-               
-           </div>
-            
-            <div class="fade-right">
-                
-                <h4 class="header-gap-top">Menus</h4>
-                
-            </div>
-            
-        </div>
-        
-    </section>
-    
-    
-    
-    <!-- =========== SUB MENU ====================== -->
-    
-    <nav class="sub-menu">
-        
-        <div id="mobile-menu" class="overlay">    
-                   
-            <div class="overlay-content"> 
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>         
-               <div class="container">     
-                   <li><button id="menu-classic-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Classic</button></li>
-                   <li><button id="menu-vegan-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Vegan</button></li>
-                   <li><button id="menu-late-night-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Late Night</button></li>
-                   <li><button id="menu-breakfast-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Breakfast</button></li>
-               </div>               
-            </div>
-            
-            
-        </div> <!-- mobile-nav -->
-            <div class="mobile-icon menu-icon" onclick="toggleMenu()">
-               <div class="fade-up">
-                <i class="fas fa-utensils"></i>                
-               </div>
-            </div>   
-        
-       <ul class="main-nav main-menu">
-           <div class="fade-up">
-            <li><button id="menu-classic-btn" class="sub-menu-btn sub-menu-food-btn">Classic</button></li>
-            <li><button id="menu-vegan-btn" class="sub-menu-btn sub-menu-food-btn">Vegan</button></li>
-            <li><button id="menu-late-night-btn" class="sub-menu-btn sub-menu-food-btn">Late Night</button></li>
-            <li><button id="menu-breakfast-btn" class="sub-menu-btn sub-menu-food-btn">Breakfast</button></li> 
-           </div>
-       </ul>
-    </nav>
-    
-    
-    
-    <!-- =========== SCROLLING MENU ====================== -->
-    
-    <nav id="scrolling-food-menu" class="scrolling-menu hide slide">
-      
-      <div class="scroll-hide">
-            <i class="fas fa-angle-double-left scroll-hide-btn scroll-hide-food-btn"></i>
-      </div>
-      
-       <ul>
-           <li><button id="starters-btn" class="scrolling-btn">Starters</button></li>
-           <li><button id="specialties-btn" class="scrolling-btn">Specialties</button></li>
-           <li><button id="sandwiches-btn" class="scrolling-btn">Sandwiches</button></li>
-           <li><button id="burgers-btn" class="scrolling-btn">Burgers</button></li>
-           <li><button id="greens-btn" class="scrolling-btn">Bowls/<br>Greens</button></li>
-       </ul>
-    </nav>
-   
-   
-       
-    <!-- =========== CLASSIC MENU ====================== -->
-      
-    <div id="menu-classic">
-        
 
-            <!-- =========== STARTERS BANNER ====================== -->
-            
-            <div class="fade-up">
-                
-                <section id="starters" class="banner food-starters-banner sub-menu-banner-gap">
+	<!-- =========== MAIN NAV ====================== -->
 
-                    <div class="banner-container">
+	<nav class="nav-bar">
 
-                        <h3>Starters</h3>
+		<div id="mobile-nav" class="overlay">
+			<div class="overlay-content">
+				<div class="container">
 
-                    </div>
+					<a href="about.html">About</a>
+					<a href="menus.html">Menus</a>
+					<a class="sub-class" href="food.html">Food</a>
+					<a class="sub-class" href="drinks.html">Drinks</a>
+					<a href="events.html">Events</a>
+					<a href="contact.html">Contact</a>
 
-                </section>
-                
-            </div>
+				</div>
+			</div>
 
-            
+		</div> <!-- mobile-nav -->
 
-            <!-- =========== STARTERS SECT ====================== -->
+		<div class="mobile-icon" onclick="toggleNav()">
+			<div class="fade-up">
+				<div class="toggle-button">
+					<div class="menu-bar menu-bar-top"></div>
+					<div class="menu-bar menu-bar-middle"></div>
+					<div class="menu-bar menu-bar-bottom"></div>
+				</div>
+			</div>
+		</div>
 
-            <section class="food-starters-section">
+		<a href="index.html"><img class="logo logo-mobile" src="./assets/img/logo.png" alt="The Green Pig Pub Logo"></a>
 
-                <div class="container">
+		<div class="main-nav fade-down">
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+			<ul class="nav-items">
+				<li class="nav-item"><a href="about.html">About</a></li>
+				<li class="dropdown-btn nav-item">
+					<a href="menus.html">Menus <i class="fas fa-caret-down"></i></a>
+					<ul class="dropdown">
+						<li><a href="food.html">Food</a></li>
+						<li><a href="drinks.html">Drinks</a></li>
+					</ul>
+				</li>
+				<a href="index.html"><img class="logo logo-main" src="./assets/img/logo.png" alt="The Green Pig Pub Logo"></a>
+				<li class="nav-item hide-home"><a href="index.html">Home</a></li>
+				<li class="nav-item"><a href="events.html">Events</a></li>
+				<li class="nav-item"><a href="contact.html">Contact</a></li>
+			</ul>
 
-                            <div class="col col-md-5">
+		</div> <!-- main-nav -->
 
-                                <h4 class="pig-favorite">Chile Verde Nachos*</h4>
-                                <p>House cut tortilla chips smothered in chile verde and melted cheddar jack cheese then topped with jalapeno, red onion, olives, tomato, green onion, salsa, sour cream and cilantro.</p>
+	</nav>
 
-                            </div>
 
-                            <div class="col col-sm-1">
 
-                                <p><em><strong>$11.99</strong></em></p>
+	<!-- ======= HERO ========================== -->
 
-                            </div>
+	<div class="fade-down">
 
-                            <div class="col col-md-5">
+		<section class="hero hero-food">
 
-                                <h4>House Wings*</h4>
-                                <p>A dozen jumbo wings tossed with your choice of traditional Buffalo hot sauce, honey Sriracha sauce, house BBQ sauce, or blackened, served with carrots, celery and ranch or bleu cheese dressing.</p>
+			<div class="hero-container">
 
-                            </div>
+				<h2>Food</h2>
 
-                            <div class="col col-md-1">
+			</div>
 
-                                <p><em><strong>$12.99</strong></em></p>
+		</section>
 
-                            </div>
-                        
-                        </div>
+	</div>
 
-                    </div> <!-- row -->
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
 
-                            <div class="col col-md-5">
 
-                                <h4>Angus Beef Sliders*</h4>
-                                <p>3 Hand pressed 2 oz. Angus beef patties topped with caramelized onions, bacon bits, and chipotle aioli.</p>
+	<!-- =========== PAGE WELCOME ====================== -->
 
-                            </div>
+	<section class="welcome food-welcome">
 
-                            <div class="col col-md-1">
+		<div class="container">
 
-                                <p><em><strong>$8.99</strong></em></p>
+			<div class="fade-left">
 
-                            </div>
+				<p>Our menu was handcrafted by Jose Guadarrama-Guardarrama and prepared from scratch daily.
+					Items highlighted in <span class="pig-favorite">green</span> are pig favorites and items with * next to them have
+					gluten free options.</p>
 
-                            <div class="col col-md-5">
+			</div>
 
-                                <h4 class="pig-favorite">The Green Pig Quesadilla</h4>
-                                <p>Grilled Chipotle tortilla stuffed with cheddar jack cheese, black beans, onion and tomato, finshed with roasted red pepper sauce and sour cream. Add chile verde or chicken for <em><strong>$3.00</strong></em> or marinated steak for <em><strong>$4.00</strong></em> more</p>
+			<div class="fade-right">
 
-                            </div>
+				<h4 class="header-gap-top">Menus</h4>
 
-                            <div class="col col-md-1">
+			</div>
 
-                                <p><em><strong>$8.99</strong></em></p>
+		</div>
 
-                            </div>
-                        
-                        </div>
+	</section>
 
-                    </div> <!-- row -->
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
 
-                            <div class="col col-md-5">
+	<!-- =========== SUB MENU ====================== -->
 
-                                <h4>The 31st East Avocado Rolls</h4>
-                                <p>House made eggrolls filled with chicken, bacon, black beans, avocado, tomato and cheddar jack cheese, served with jalapeno ranch or chipotle ranch.</p>
+	<nav class="sub-menu">
 
-                            </div>
+		<div id="mobile-menu" class="overlay">
 
-                            <div class="col col-md-1">
+			<div class="overlay-content">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="container">
+					<li><button id="menu-classic-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Classic</button></li>
+					<li><button id="menu-vegan-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Vegan</button></li>
+					<li><button id="menu-late-night-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Late Night</button></li>
+					<li><button id="menu-breakfast-btn" class="sub-menu-btn sub-menu-food-btn" onclick="closeNav()">Breakfast</button></li>
+				</div>
+			</div>
 
-                                <p><em><strong>$9.99</strong></em></p>
 
-                            </div>
+		</div> <!-- mobile-nav -->
+		<div class="mobile-icon menu-icon" onclick="toggleMenu()">
+			<div class="fade-up">
+				<i class="fas fa-utensils"></i>
+			</div>
+		</div>
 
-                            <div class="col col-md-5">
+		<ul class="main-nav main-menu">
+			<div class="fade-up">
+				<li><button id="menu-classic-btn" class="sub-menu-btn sub-menu-food-btn">Classic</button></li>
+				<li><button id="menu-vegan-btn" class="sub-menu-btn sub-menu-food-btn">Vegan</button></li>
+				<li><button id="menu-late-night-btn" class="sub-menu-btn sub-menu-food-btn">Late Night</button></li>
+				<li><button id="menu-breakfast-btn" class="sub-menu-btn sub-menu-food-btn">Breakfast</button></li>
+			</div>
+		</ul>
+	</nav>
 
-                                <h4>Chicken Tender Basket</h4>
-                                <p>3 large battered chicken tenders, served with hand cut, house fries and your choice of dipping sauce: chipotle ranch, jalapeno ranch, house BBQ or buffalo.</p>
 
-                            </div>
 
-                            <div class="col col-md-1">
+	<!-- =========== SCROLLING MENU ====================== -->
 
-                                <p><em><strong>$9.99</strong></em></p>
+	<nav id="scrolling-food-menu" class="scrolling-menu hide slide">
 
-                            </div>
-                        
-                        </div>
+		<div class="scroll-hide">
+			<i class="fas fa-angle-double-left scroll-hide-btn scroll-hide-food-btn"></i>
+		</div>
 
-                    </div> <!-- row -->
+		<ul>
+			<li><button id="starters-btn" class="scrolling-btn">Starters</button></li>
+			<li><button id="specialties-btn" class="scrolling-btn">Specialties</button></li>
+			<li><button id="sandwiches-btn" class="scrolling-btn">Sandwiches</button></li>
+			<li><button id="burgers-btn" class="scrolling-btn">Burgers</button></li>
+			<li><button id="greens-btn" class="scrolling-btn">Bowls/<br>Greens</button></li>
+			<li><button id="specials-btn" class="scrolling-btn">Daily<br>Specials</button></li>
+		</ul>
+	</nav>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
 
-                            <div class="col col-md-5">
 
-                                <h4>Chicken Chicharrons*</h4>
-                                <p>Bites sized pieces of skin and moist thigh meat lightly dusted with rice flour &amp; chilito salt, deep fried, served with fresh lime wedges, chipotle ranch and roasted tomato salsa.</p>
+	<!-- =========== CLASSIC MENU ====================== -->
 
-                            </div>
+	<div id="menu-classic">
 
-                            <div class="col col-md-1">
 
-                                <p><em><strong>$8.99</strong></em></p>
+		<!-- =========== STARTERS BANNER ====================== -->
 
-                            </div>
+		<div class="fade-up">
 
-                            <div class="col col-md-5">
+			<section id="starters" class="banner food-starters-banner sub-menu-banner-gap">
 
-                                <h4>Deviled Eggs*</h4>
-                                <p>Eggs, hard boiled, halved and pickled filled with house-deviled mousse, bacon bits and smoked paprika.</p>
+				<div class="banner-container">
 
-                            </div>
+					<h3>Starters</h3>
 
-                            <div class="col col-md-1">
+				</div>
 
-                                <p><em><strong>$7.99</strong></em></p>
+			</section>
 
-                            </div>
-                        
-                        </div>
+		</div>
 
-                    </div> <!-- row -->
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
 
-                            <div class="col col-md-5">
+		<!-- =========== STARTERS SECT ====================== -->
 
-                                <h4>House Fries*</h4>
-                                <p>Fresh Idaho potatoes, hand cut, double fried and tossed in house seasoning, served with Utah Fry Sauce. Add cheese and bacon crumbles <em><strong>$3.00</strong></em></p>
+		<section class="food-starters-section">
 
-                            </div>
+			<div class="container">
 
-                            <div class="col col-md-1">
+				<div class="row menu-item">
 
-                                <p><em><strong>$5.99</strong></em></p>
+					<div class="fade-up-2">
 
-                            </div>
+						<div class="col col-md-5">
 
-                            <div class="col col-md-5">
+							<h4 class="pig-favorite">Chile Verde Nachos*</h4>
+							<p>House cut tortilla chips smothered in chile verde and melted cheddar jack cheese then topped with jalapeno,
+								red onion, olives, tomato, green onion, salsa, sour cream and cilantro.</p>
 
-                                <h4>Bavarian Pretzel &amp; Beer Cheese</h4>
-                                <p>2 soft pretzels served hot with Fat Tire Ale Beer Cheese and whole grain mustard.</p>
+						</div>
 
-                            </div>
+						<div class="col col-sm-1">
 
-                            <div class="col col-md-1">
+							<p><em><strong>$11.99</strong></em></p>
 
-                                <p><em><strong>$4.99</strong></em></p>
+						</div>
 
-                            </div>
-                        
-                        </div>
+						<div class="col col-md-5">
 
-                    </div> <!-- row -->
+							<h4>House Wings*</h4>
+							<p>A dozen jumbo wings tossed with your choice of traditional Buffalo hot sauce, honey Sriracha sauce, house BBQ
+								sauce, or blackened, served with carrots, celery and ranch or bleu cheese dressing.</p>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+						</div>
 
-                            <div class="col col-md-5 last-item">
+						<div class="col col-md-1">
 
-                                <h4>Chips &amp; Salsa*</h4>
-                                <p>House cut tortilla chips served with salsa fresca. Add Guacamole <em><strong>3.50</strong></em></p>
+							<p><em><strong>$12.99</strong></em></p>
 
-                            </div>
+						</div>
 
-                            <div class="col col-md-1">
+					</div>
 
-                                <p><em><strong>$4.99</strong></em></p>
+				</div> <!-- row -->
 
-                            </div>
-                        
-                        </div>
+				<div class="row menu-item">
 
-                    </div> <!-- row -->
+					<div class="fade-up-2">
 
-                </div> <!-- container -->
+						<div class="col col-md-5">
 
-            </section> <!-- starters -->
-        
+							<h4>Angus Beef Sliders*</h4>
+							<p>3 Hand pressed 2 oz. Angus beef patties topped with caramelized onions, bacon bits, and chipotle aioli.</p>
 
-            <!-- =========== SPECIALTIES BANNER ====================== -->
-            
-            <div class="fade-up">
-                
-                <section id="specialties" class="banner food-specialties-banner">
+						</div>
 
-                    <div class="banner-container">
+						<div class="col col-md-1">
 
-                        <h3>Pig Specialties</h3>
+							<p><em><strong>$8.99</strong></em></p>
 
-                    </div>
+						</div>
 
-                </section>
+						<div class="col col-md-5">
 
-            </div>
+							<h4 class="pig-favorite">The Green Pig Quesadilla</h4>
+							<p>Grilled Chipotle tortilla stuffed with cheddar jack cheese, black beans, onion and tomato, finshed with
+								roasted red pepper sauce and sour cream. Add chile verde or chicken for <em><strong>$3.00</strong></em> or
+								marinated steak for <em><strong>$4.00</strong></em> more</p>
 
+						</div>
 
-            <!-- =========== SPECIALTIES SECT ====================== -->
+						<div class="col col-md-1">
 
-            <section class="food-specialties-section">
+							<p><em><strong>$8.99</strong></em></p>
 
-                <div class="container">
+						</div>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+					</div>
 
-                            <div class="col col-md-5">
+				</div> <!-- row -->
 
-                                <h4 class="pig-favorite">Blackend Salmon Tacos*</h4>
-                                <p>Blackend salmon served in 3 warm flour tortillas, topped with chipotle aioli, coleslaw, green and red onion, tomato, queso fresco and cilantro, served with fresh lime wedges and blackberry jalapeno sauce.</p>
+				<div class="row menu-item">
 
-                            </div>
+					<div class="fade-up-2">
 
-                            <div class="col col-md-1">
+						<div class="col col-md-5">
 
-                                <p><em><strong>$12.99</strong></em></p>
+							<h4>The 31st East Avocado Rolls</h4>
+							<p>House made eggrolls filled with chicken, bacon, black beans, avocado, tomato and cheddar jack cheese, served
+								with jalapeno ranch or chipotle ranch.</p>
 
-                            </div>
+						</div>
 
-                            <div class="col col-md-5">
+						<div class="col col-md-1">
 
-                                <h4>Carne Asada Tacos*</h4>
-                                <p>Tender, thinly sliced, marinated steak served in 3 corn tortillas topped with cabbage, green and red onion, tomato and queso fresco with sour cream and salsa on the side.</p>
+							<p><em><strong>$9.99</strong></em></p>
 
-                            </div>
+						</div>
 
-                            <div class="col col-md-1">
+						<div class="col col-md-5">
 
-                                <p><em><strong>$12.99</strong></em></p>
+							<h4>Chicken Tender Basket</h4>
+							<p>3 large battered chicken tenders, served with hand cut, house fries and your choice of dipping sauce:
+								chipotle ranch, jalapeno ranch, house BBQ or buffalo.</p>
 
-                            </div>
-                        
-                        </div>
+						</div>
 
-                    </div> <!-- row -->
+						<div class="col col-md-1">
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+							<p><em><strong>$9.99</strong></em></p>
 
-                            <div class="col col-md-5">
+						</div>
 
-                                <h4>Carnitas Street Tacos</h4>
-                                <p>Marinated shredded pork served in 3 tortillas topped with diced onion, cilantro, avocado and lime crema served with chips and salsa &amp; traditional salsa verde on the side.</p>
+					</div>
 
-                            </div>
+				</div> <!-- row -->
 
-                            <div class="col col-md-1">
+				<div class="row menu-item">
 
-                                <p><em><strong>$10.99</strong></em></p>
+					<div class="fade-up-2">
 
-                            </div>
+						<div class="col col-md-5">
 
-                            <div class="col col-md-5">
+							<h4>Chicken Chicharrons*</h4>
+							<p>Bites sized pieces of skin and moist thigh meat lightly dusted with rice flour &amp; chilito salt, deep
+								fried, served with fresh lime wedges, chipotle ranch and roasted tomato salsa.</p>
 
-                                <h4 class="pig-favorite">Fish Tacos</h4>
-                                <p>Cod hand battered in Pig pilsner beer batter, fried and served in 3 flour tortillas, served with chipotle aioli, coleslaw, green and red onion, tomato, queso fresco and cilantro with blackberry jalapeno sauce on the side.</p>
+						</div>
 
-                            </div>
+						<div class="col col-md-1">
 
-                            <div class="col col-md-1">
+							<p><em><strong>$8.99</strong></em></p>
 
-                                <p><em><strong>$12.99</strong></em></p>
+						</div>
 
-                            </div>
-                        
-                        </div>
+						<div class="col col-md-5">
 
-                    </div> <!-- row -->
+							<h4>Deviled Eggs*</h4>
+							<p>Eggs, hard boiled, halved and pickled filled with house-deviled mousse, bacon bits and smoked paprika.</p>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+						</div>
 
-                            <div class="col col-md-5 last-item">
+						<div class="col col-md-1">
 
-                                <h4 class="pig-favorite">Fish &amp; Chips</h4>
-                                <p>Cod hand battered in Pig pilsner beer batter, fried and served with hand cut, house fries, tartar sauce, malt vinegar and lemon wedges.</p>
+							<p><em><strong>$7.99</strong></em></p>
 
-                            </div>
+						</div>
 
-                            <div class="col col-md-1">
+					</div>
 
-                                <p><em><strong>$13.99</strong></em></p>
+				</div> <!-- row -->
 
-                            </div>
-                        
-                        </div>
+				<div class="row menu-item">
 
-                    </div> <!-- row -->
+					<div class="fade-up-2">
 
-                </div> <!-- container -->
+						<div class="col col-md-5">
 
-            </section> <!-- specialties -->
-        
+							<h4>House Fries*</h4>
+							<p>Fresh Idaho potatoes, hand cut, double fried and tossed in house seasoning, served with Utah Fry Sauce. Add
+								cheese and bacon crumbles <em><strong>$3.00</strong></em></p>
 
-            <!-- =========== SANDWICHES BANNER ====================== -->
-            
-            <div class="fade-up">
-                
-                <section id="sandwiches" class="banner food-sandwiches-banner">
+						</div>
 
-                    <div class="banner-container">
+						<div class="col col-md-1">
 
-                        <h3>Sandwiches</h3>
+							<p><em><strong>$5.99</strong></em></p>
 
-                    </div>
+						</div>
 
-                </section>
-                
-            </div>
+						<div class="col col-md-5">
 
-            
+							<h4>Bavarian Pretzel &amp; Beer Cheese</h4>
+							<p>2 soft pretzels served hot with Fat Tire Ale Beer Cheese and whole grain mustard.</p>
 
-            <!-- =========== SANDWICHES SECT ====================== -->
+						</div>
 
-            <section class="food-sandwiches-section">
+						<div class="col col-md-1">
 
-                <div class="container">
+							<p><em><strong>$4.99</strong></em></p>
 
-                    <div class="fade-up">
+						</div>
 
-                        <p class="additions">All sandwiches are served with your choice of house fries, soup de jour, green salad or pasta salad.</p>
+					</div>
 
-                    </div>
+				</div> <!-- row -->
 
-                    <div class="row menu-item">
+				<div class="row menu-item">
 
-                        <div class="fade-up-2">
+					<div class="fade-up-2">
 
-                            <div class="col col-md-5">
+						<div class="col col-md-5 last-item">
 
-                                <h4 class="pig-favorite">Cubano*</h4>
-                                <p>Marinated shredded pork with grilled ham, Swiss cheese and pickles, with roasted garlic mayo on a toasted baguette.</p>
+							<h4>Chips &amp; Salsa*</h4>
+							<p>House cut tortilla chips served with salsa fresca. Add Guacamole <em><strong>3.50</strong></em></p>
 
-                            </div>
+						</div>
 
-                            <div class="col col-md-1">
+						<div class="col col-md-1">
 
-                                <p><em><strong>$11.99</strong></em></p>
+							<p><em><strong>$4.99</strong></em></p>
 
-                            </div>
+						</div>
 
-                            <div class="col col-md-5">
+					</div>
 
-                                <h4 class="pig-favorite">Angus Corned Beef Reuben*</h4>
-                                <p>Melt in your mouth, house sliced corned beef, sauerkraut, Swiss cheese piled high with 1000 island dressing on toasted marbled rye.</p>
+				</div> <!-- row -->
 
-                            </div>
+			</div> <!-- container -->
 
-                            <div class="col col-md-1">
+		</section> <!-- starters -->
 
-                                <p><em><strong>$12.99</strong></em></p>
 
-                            </div>
+		<!-- =========== SPECIALTIES BANNER ====================== -->
 
-                        </div>
+		<div class="fade-up">
 
-                    </div> <!-- row -->
+			<section id="specialties" class="banner food-specialties-banner">
 
-                    <div class="row menu-item">
+				<div class="banner-container">
 
-                        <div class="fade-up-2">
+					<h3>Pig Specialties</h3>
 
-                            <div class="col col-md-5">
+				</div>
 
-                                <h4>Jose's Chicken Ranchero*</h4>
-                                <p>Grilled chicken breast, handmade guacamole, Applewood smoked bacon and shredded cheddar jack cheese with chipotle aioli on a toasted ciabatta bun.</p>
+			</section>
 
-                            </div>
+		</div>
 
-                            <div class="col col-md-1">
 
-                                <p><em><strong>$11.99</strong></em></p>
+		<!-- =========== SPECIALTIES SECT ====================== -->
 
-                            </div>
+		<section class="food-specialties-section">
 
-                            <div class="col col-md-5">
+			<div class="container">
 
-                                <h4 class="pig-favorite">Pig-A-Delphia Cheese Steak*</h4>
-                                <p>Thinly sliced top round saut&eacute;ed with Anaheim peppers and onions topped with melted pepper jack cheese and piled high on a toasted ambassador roll served with a side of jalapeno ranch.</p>
+				<div class="row menu-item">
 
-                            </div>
+					<div class="fade-up-2">
 
-                            <div class="col col-md-1">
+						<div class="col col-md-5">
 
-                                <p><em><strong>$11.99</strong></em></p>
+							<h4 class="pig-favorite">Blackend Salmon Tacos*</h4>
+							<p>Blackend salmon served in 3 warm flour tortillas, topped with chipotle aioli, coleslaw, green and red onion,
+								tomato, queso fresco and cilantro, served with fresh lime wedges and blackberry jalapeno sauce.</p>
 
-                            </div>
+						</div>
 
-                        </div>
+						<div class="col col-md-1">
 
-                    </div> <!-- row -->
+							<p><em><strong>$12.99</strong></em></p>
 
-                    <div class="row menu-item">
+						</div>
 
-                        <div class="fade-up-2">
+						<div class="col col-md-5">
 
-                            <div class="col col-md-5">
+							<h4>Carne Asada Tacos*</h4>
+							<p>Tender, thinly sliced, marinated steak served in 3 corn tortillas topped with cabbage, green and red onion,
+								tomato and queso fresco with sour cream and salsa on the side.</p>
 
-                                <h4>BBQ Pulled Pork*</h4>
-                                <p>Marinated shredded pork smothered in BBQ sauce, topped with coleslaw and a pickle spear on a toasted ambassador roll.</p>
+						</div>
 
-                            </div>
+						<div class="col col-md-1">
 
-                            <div class="col col-md-1">
+							<p><em><strong>$12.99</strong></em></p>
 
-                                <p><em><strong>$11.99</strong></em></p>
+						</div>
 
-                            </div>
+					</div>
 
-                            <div class="col col-md-5">
+				</div> <!-- row -->
 
-                                <h4>Mother Clucker*</h4>
-                                <p>Buttermilk marinated chicken breast hand dredged in house seasoned flour, fried golden brown and topped with granny snith apples &amp; jalapeno coleslaw served on a ciabatta roll.</p>
+				<div class="row menu-item">
 
-                            </div>
+					<div class="fade-up-2">
 
-                            <div class="col col-md-1">
+						<div class="col col-md-5">
 
-                                <p><em><strong>$11.99</strong></em></p>
+							<h4>Carnitas Street Tacos</h4>
+							<p>Marinated shredded pork served in 3 tortillas topped with diced onion, cilantro, avocado and lime crema
+								served with chips and salsa &amp; traditional salsa verde on the side.</p>
 
-                            </div>
+						</div>
 
-                        </div>
+						<div class="col col-md-1">
 
-                    </div> <!-- row -->
+							<p><em><strong>$10.99</strong></em></p>
 
-                </div> <!-- container -->
+						</div>
 
-            </section> <!-- sandwiches -->
-        
+						<div class="col col-md-5">
 
-            <!-- =========== BURGERS BANNER ====================== -->
-            
-            <div class="fade-up">
-                
-                <section id="burgers" class="banner food-burgers-banner">
+							<h4 class="pig-favorite">Fish Tacos</h4>
+							<p>Cod hand battered in Pig pilsner beer batter, fried and served in 3 flour tortillas, served with chipotle
+								aioli, coleslaw, green and red onion, tomato, queso fresco and cilantro with blackberry jalapeno sauce on the
+								side.</p>
 
-                    <div class="banner-container">
+						</div>
 
-                        <h3>Burgers</h3>
+						<div class="col col-md-1">
 
-                    </div>
+							<p><em><strong>$12.99</strong></em></p>
 
-                </section>
+						</div>
 
-            </div>
+					</div>
 
+				</div> <!-- row -->
 
-            <!-- =========== BURGERS SECT ====================== -->
+				<div class="row menu-item">
 
-            <section class="food-burgers-section">
+					<div class="fade-up-2">
 
-                <div class="container">
-                        
-                    <div class="fade-up-2">
-                    
-                        <p class="additions">
-                            <strong>Additions</strong><em>
-                            <br>
-                            <strong>1.00</strong> </em>| cheddar, provolone, pepper jack, Swiss, mushrooms, jalapenos 
-                            <br>
-                            <em><strong>2.00</strong></em> | avocado, blue cheese, white cheddar, green chillies, fried egg 
-                            <br>
-                            <em><strong>3.00</strong> </em>| Applewood smoked bacon, Cajun bacon
-                        </p>
-                        
-                    </div>
+						<div class="col col-md-5 last-item">
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+							<h4 class="pig-favorite">Fish &amp; Chips</h4>
+							<p>Cod hand battered in Pig pilsner beer batter, fried and served with hand cut, house fries, tartar sauce, malt
+								vinegar and lemon wedges.</p>
 
-                            <div class="col col-md-5">
+						</div>
 
-                                <h4>House Burger*</h4>
-                                <p>Hand pressed 6 oz. ground Angus beef topped with lettuce, tomato, red onion and pickle served with 1000 island dressing on a toasted challah bun.</p>
+						<div class="col col-md-1">
 
-                            </div>
+							<p><em><strong>$13.99</strong></em></p>
 
-                            <div class="col col-md-1">
+						</div>
 
-                                <p><em><strong>$8.99</strong></em></p>
+					</div>
 
-                            </div>
+				</div> <!-- row -->
 
-                            <div class="col col-md-5">
+			</div> <!-- container -->
 
-                                <h4 class="pig-favorite">Denver Burger*</h4>
-                                <p>Hand pressed 6oz. ground Angus beef topped with caramelized onions, jalapeno cream cheese, Applewood smoked bacon served on a toasted ciabatta bun.</p>
+		</section> <!-- specialties -->
 
-                            </div>
 
-                            <div class="col col-md-1">
+		<!-- =========== SANDWICHES BANNER ====================== -->
 
-                                <p><em><strong>$12.99</strong></em></p>
+		<div class="fade-up">
 
-                            </div>
-                        
-                        </div>
+			<section id="sandwiches" class="banner food-sandwiches-banner">
 
-                    </div> <!-- row -->
+				<div class="banner-container">
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+					<h3>Sandwiches</h3>
 
-                            <div class="col col-md-5">
+				</div>
 
-                                <h4>Pit Boss Burger*</h4>
-                                <p>Hand pressed 6oz. ground Angus beef topped with BBQ beer brisket, caramelized onions, Fat Tire Ale Beer Cheese served on a toasted ciabatta bun.</p>
+			</section>
 
-                            </div>
+		</div>
 
-                            <div class="col col-md-1">
 
-                                <p><em><strong>$14.99</strong></em></p>
 
-                            </div>
+		<!-- =========== SANDWICHES SECT ====================== -->
 
-                            <div class="col col-md-5">
+		<section class="food-sandwiches-section">
 
-                            <h4 class="pig-favorite">The Angus Burger*</h4>
-                                <p>Hand pressed 8oz. ground, 100% grass fed Angus beef topped with Swiss cheese, white cheddar, lettuce, tomato, Vidalia onion and sweet ionion aioli served on a toasted ciabatta bun.</p>
+			<div class="container">
 
-                            </div>
+				<div class="fade-up">
 
-                            <div class="col col-md-1">
+					<p class="additions">All sandwiches are served with your choice of house fries, soup de jour, green salad or pasta
+						salad.</p>
 
-                                <p><em><strong>$13.99</strong></em></p>
+				</div>
 
-                            </div>
-                        
-                        </div>
+				<div class="row menu-item">
 
-                    </div> <!-- row -->
+					<div class="fade-up-2">
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+						<div class="col col-md-5">
 
-                            <div class="col col-md-5">
+							<h4 class="pig-favorite">Cubano*</h4>
+							<p>Marinated shredded pork with grilled ham, Swiss cheese and pickles, with roasted garlic mayo on a toasted
+								baguette.</p>
 
-                                <h4>Magnolia Burger*</h4>
-                                <p>Hand pressed 6oz. ground Angus beef blackened and topped with Applewood smoked bleu cheese crumbles, Cajun bacon, lettuce, tomato, onion and chipotle aioli served on a toasted ciabatta bun.</p>
+						</div>
 
-                            </div>
+						<div class="col col-md-1">
 
-                            <div class="col col-md-1">
+							<p><em><strong>$11.99</strong></em></p>
 
-                                <p><em><strong>$12.99</strong></em></p>
+						</div>
 
-                            </div>
+						<div class="col col-md-5">
 
-                            <div class="col col-md-5">
+							<h4 class="pig-favorite">Angus Corned Beef Reuben*</h4>
+							<p>Melt in your mouth, house sliced corned beef, sauerkraut, Swiss cheese piled high with 1000 island dressing
+								on toasted marbled rye.</p>
 
-                                <h4>Chile Relleno Burger</h4>
-                                <p>Hand pressed 6oz. ground Angus beef blackened and topped with a grilled Anaheim pepper, white cheddar and a fried egg on a toasted challah bun.</p>
+						</div>
 
-                            </div>
+						<div class="col col-md-1">
 
-                            <div class="col col-md-1">
+							<p><em><strong>$12.99</strong></em></p>
 
-                                <p><em><strong>$12.99</strong></em></p>
+						</div>
 
-                            </div>
-                        
-                        </div>
+					</div>
 
-                    </div> <!-- row -->
+				</div> <!-- row -->
 
-                </div> <!-- container -->
+				<div class="row menu-item">
 
-            </section> <!-- burgers -->
-        
+					<div class="fade-up-2">
 
-            <!-- =========== GREENS BANNER ====================== -->
-            
-            <div class="fade-up">
-                
-                <section id="greens" class="banner food-greens-banner">
+						<div class="col col-md-5">
 
-                    <div class="banner-container">
+							<h4>Jose's Chicken Ranchero*</h4>
+							<p>Grilled chicken breast, handmade guacamole, Applewood smoked bacon and shredded cheddar jack cheese with
+								chipotle aioli on a toasted ciabatta bun.</p>
 
-                        <h3>Bowls and Greens</h3>
+						</div>
 
-                    </div>
+						<div class="col col-md-1">
 
-                </section>
+							<p><em><strong>$11.99</strong></em></p>
 
-            </div>
+						</div>
 
+						<div class="col col-md-5">
 
-            <!-- =========== GREENS SECT ====================== -->
+							<h4 class="pig-favorite">Pig-A-Delphia Cheese Steak*</h4>
+							<p>Thinly sliced top round saut&eacute;ed with Anaheim peppers and onions topped with melted pepper jack cheese
+								and piled high on a toasted ambassador roll served with a side of jalapeno ranch.</p>
 
-            <section class="food-greens-section">
+						</div>
 
-                <div class="container">
-                        
-                    <div class="fade-up-2">
+						<div class="col col-md-1">
 
-                        <p class="additions">
-                            <strong>Add protein to any salad</strong>
-                            <br>
-                            3.00 | Chicken
-                            <br>
-                            4.00 | Salmon
-                            <br>
-                            5.00 | Top Sirloin Coulotte
-                            <br>
-                            <strong>Dressings</strong> | balsamic vinaigrette, ranch, bleu cheese, Caesar, tequila lime or house vinaigrette
-                        </p>
-                    
-                    </div>
+							<p><em><strong>$11.99</strong></em></p>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+						</div>
 
-                            <div class="col col-md-5">
+					</div>
 
-                                <h4 class="pig-favorite">Salmon Salad</h4>
-                                <p>Fresh mixed greens topped with seared Atlantic salmon, oven roasted, marinated tomatoes, cucumber salad, red onion and radish sprouts, drizzled with olive oil and rasberry red wine vinegar.</p>
+				</div> <!-- row -->
 
-                            </div>
+				<div class="row menu-item">
 
-                            <div class="col col-md-1">
+					<div class="fade-up-2">
 
-                                <p><em><strong>$14.99</strong></em></p>
+						<div class="col col-md-5">
 
-                            </div>
+							<h4>BBQ Pulled Pork*</h4>
+							<p>Marinated shredded pork smothered in BBQ sauce, topped with coleslaw and a pickle spear on a toasted
+								ambassador roll.</p>
 
-                            <div class="col col-md-5">
+						</div>
 
-                                <h4>Southwestern Cobb Salad</h4>
-                                <p>Fresh spinach tossed in tequila lime vinaigrette, topped with Applewood smoked bacon, sweet corn, black beans, red onion, heirloom cherry tomatoes, Applewood smoked bleu cheese, tortilla strips, hard boiled egg and sliced avocado.</p>
+						<div class="col col-md-1">
 
-                            </div>
+							<p><em><strong>$11.99</strong></em></p>
 
-                            <div class="col col-md-1">
+						</div>
 
-                                <p><em><strong>$13.99</strong></em></p>
+						<div class="col col-md-5">
 
-                            </div>
-                        
-                        </div>
+							<h4>Mother Clucker*</h4>
+							<p>Buttermilk marinated chicken breast hand dredged in house seasoned flour, fried golden brown and topped with
+								granny snith apples &amp; jalapeno coleslaw served on a ciabatta roll.</p>
 
-                    </div> <!-- row -->
+						</div>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+						<div class="col col-md-1">
 
-                            <div class="col col-md-5">
+							<p><em><strong>$11.99</strong></em></p>
 
-                                <h4>Steak &amp; Arugula Salad</h4>
-                                <p>Fresh arugula topped with Top Sirloin Coulotte steak, heirloom cherry tomatoes, julienne red onion and pecorino cheese.</p>
+						</div>
 
-                            </div>
+					</div>
 
-                            <div class="col col-md-1">
+				</div> <!-- row -->
 
-                                <p><em><strong>$14.99</strong></em></p>
+			</div> <!-- container -->
 
-                            </div>
+		</section> <!-- sandwiches -->
 
-                            <div class="col col-md-5">
 
-                                <h4>Smoked Buffalo Chicken Salad</h4>
-                                <p>Buttermilk marinated chicken breast, fried &amp; tossed in Buffalo sauce, on fresh romaine with Applewood smoked bacon, herloom cherry tomatoes, julienne red onion and Applewood smoked bleu cheese crumbles with Bleu Cheese dressing.</p>
+		<!-- =========== BURGERS BANNER ====================== -->
 
-                            </div>
+		<div class="fade-up">
 
-                            <div class="col col-md-1">
+			<section id="burgers" class="banner food-burgers-banner">
 
-                                <p><em><strong>$9.99</strong></em></p>
+				<div class="banner-container">
 
-                            </div>
-                        
-                        </div>
+					<h3>Burgers</h3>
 
-                    </div> <!-- row -->
+				</div>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+			</section>
 
-                            <div class="col col-md-5">
+		</div>
 
-                                <h4>Classic Caesar Salad</h4>
-                                <p>Fresh romaine, house made croutons, shaved Parmesan and creamy Caesar dressing. Add chicken for <em><strong>$3.00</strong></em> or salmon for <em><strong>$6.00</strong></em> more</p>
 
-                            </div>
+		<!-- =========== BURGERS SECT ====================== -->
 
-                            <div class="col col-md-1">
+		<section class="food-burgers-section">
 
-                                <p><em><strong>$9.99</strong></em></p>
+			<div class="container">
 
-                            </div>
+				<div class="fade-up-2">
 
-                            <div class="col col-md-5">
+					<p class="additions">
+						<strong>Additions</strong><em>
+							<br>
+							<strong>1.00</strong> </em>| cheddar, provolone, pepper jack, Swiss, mushrooms, jalapenos
+						<br>
+						<em><strong>2.00</strong></em> | avocado, blue cheese, white cheddar, green chillies, fried egg
+						<br>
+						<em><strong>3.00</strong> </em>| Applewood smoked bacon, Cajun bacon
+					</p>
 
-                                <h4>Dinner Salad</h4>
-                                <p>Fresh mesclun mixed greens, tomato wedge, julienne red onions, English cucumbers and house made croutons.</p>
+				</div>
 
-                            </div>
+				<div class="row menu-item">
 
-                            <div class="col col-md-1">
+					<div class="fade-up-2">
 
-                                <p><em><strong>$9.99</strong></em></p>
+						<div class="col col-md-5">
 
-                            </div>
-                        
-                        </div>
+							<h4>House Burger*</h4>
+							<p>Hand pressed 6 oz. ground Angus beef topped with lettuce, tomato, red onion and pickle served with 1000
+								island dressing on a toasted challah bun.</p>
 
-                    </div> <!-- row -->
+						</div>
 
-                    <div class="row menu-item">
-                        
-                        <div class="fade-up-2">
+						<div class="col col-md-1">
 
-                            <div class="col col-md-5 last-item">
+							<p><em><strong>$8.99</strong></em></p>
 
-                                <h4>Soup of The Day</h4>
-                                <p>Soup prepared from scratch daily. Ask server for details.</p>
+						</div>
 
-                                <div class="row">
+						<div class="col col-md-5">
 
-                                    <div class="col col-md-6">
+							<h4 class="pig-favorite">Denver Burger*</h4>
+							<p>Hand pressed 6oz. ground Angus beef topped with caramelized onions, jalapeno cream cheese, Applewood smoked
+								bacon served on a toasted ciabatta bun.</p>
 
-                                        <p><em><strong>Cup</strong></em></p>
+						</div>
 
-                                    </div>
+						<div class="col col-md-1">
 
-                                    <div class="col col-md-6">
+							<p><em><strong>$12.99</strong></em></p>
 
-                                        <p><em><strong>$4.99</strong></em></p>
+						</div>
 
-                                    </div>
+					</div>
 
-                                    <div class="col col-md-6">
+				</div> <!-- row -->
 
-                                        <p><em><strong>Bowl</strong></em></p>
+				<div class="row menu-item">
 
-                                    </div>
+					<div class="fade-up-2">
 
-                                    <div class="col col-md-6">
+						<div class="col col-md-5">
 
-                                        <p><em><strong>$5.99</strong></em></p>
+							<h4>Pit Boss Burger*</h4>
+							<p>Hand pressed 6oz. ground Angus beef topped with BBQ beer brisket, caramelized onions, Fat Tire Ale Beer
+								Cheese served on a toasted ciabatta bun.</p>
 
-                                    </div>
+						</div>
 
-                                </div>
+						<div class="col col-md-1">
 
-                            </div>
-                        
-                        </div>
+							<p><em><strong>$14.99</strong></em></p>
 
-                    </div> <!-- row -->
+						</div>
 
-                </div> <!-- container -->
+						<div class="col col-md-5">
 
-            </section> <!-- bowls n greens -->
-        
+							<h4 class="pig-favorite">The Angus Burger*</h4>
+							<p>Hand pressed 8oz. ground, 100% grass fed Angus beef topped with Swiss cheese, white cheddar, lettuce, tomato,
+								Vidalia onion and sweet ionion aioli served on a toasted ciabatta bun.</p>
 
-    </div> <!-- menu-classic -->
-   
-    
-   
-    <!-- =========== VEGAN MENU ====================== -->
-  
-    <div id="menu-vegan">
-        
+						</div>
 
-        <!-- =========== VEGAN BANNER ====================== -->
+						<div class="col col-md-1">
 
-            <section class="banner food-vegan-banner sub-menu-banner-gap">
+							<p><em><strong>$13.99</strong></em></p>
 
-                <div class="banner-container">
+						</div>
 
-                    <h3>Vegan</h3>
+					</div>
 
-                </div>
+				</div> <!-- row -->
 
-            </section>
-            
+				<div class="row menu-item">
 
-        <!-- =========== VEGAN SECT ====================== -->
+					<div class="fade-up-2">
 
-            <section class="food-vegan-section">
+						<div class="col col-md-5">
 
-                <div class="container">
+							<h4>Magnolia Burger*</h4>
+							<p>Hand pressed 6oz. ground Angus beef blackened and topped with Applewood smoked bleu cheese crumbles, Cajun
+								bacon, lettuce, tomato, onion and chipotle aioli served on a toasted ciabatta bun.</p>
 
-                    <div class="row menu-item">
+						</div>
 
-                        <div class="col col-md-5">
+						<div class="col col-md-1">
 
-                            <h4>Vegan Tiger Wings</h4>
-                            <p>A dozen vegan wings tossed in your choice of traditional Buffalo hot sauce, honey Sriracha sauce or house BBQ sauce, served with carrots, celery and vegan ranch or vegan bleu cheese dressing.</p>
+							<p><em><strong>$12.99</strong></em></p>
 
-                        </div>
+						</div>
 
-                        <div class="col col-sm-1">
+						<div class="col col-md-5">
 
-                            <p><em><strong>$12.99</strong></em></p>
+							<h4>Chile Relleno Burger</h4>
+							<p>Hand pressed 6oz. ground Angus beef blackened and topped with a grilled Anaheim pepper, white cheddar and a
+								fried egg on a toasted challah bun.</p>
 
-                        </div>
+						</div>
 
-                        <div class="col col-md-5">
+						<div class="col col-md-1">
 
-                            <h4>Sweet Tiger Tacos</h4>
-                            <p>Tiger wings tossed in our traditional salsa verde served in 3 corn tortillas topped with shredded romaine lettuce, guacamole and vegan sour cream with salsa fresca.</p>
+							<p><em><strong>$12.99</strong></em></p>
 
-                        </div>
+						</div>
 
-                        <div class="col col-md-1">
+					</div>
 
-                            <p><em><strong>$10.99</strong></em></p>
+				</div> <!-- row -->
 
-                        </div>
+			</div> <!-- container -->
 
-                    </div> <!-- row -->
+		</section> <!-- burgers -->
 
-                    <div class="row menu-item">
 
-                        <div class="col col-md-5">
+		<!-- =========== GREENS BANNER ====================== -->
 
-                            <h4>Vegan Tacos</h4>
-                            <p>Saut&eacute;ed peppers and onions, black beans and sweet corn served in 3 corn tortillas topped with cabbage, green onions and tomato served with lime and salsa fresca.</p>
+		<div class="fade-up">
 
-                        </div>
+			<section id="greens" class="banner food-greens-banner">
 
-                        <div class="col col-md-1">
+				<div class="banner-container">
 
-                            <p><em><strong>$9.99</strong></em></p>
+					<h3>Bowls and Greens</h3>
 
-                        </div>
+				</div>
 
-                        <div class="col col-md-5">
+			</section>
 
-                            <h4>Rabbit Platter</h4>
-                            <p>Fresh carrots, celery, heirloom cherry tomatoes, English cucumbers, and grilled pita bread served with house made hummus and vegan ranch.</p>
+		</div>
 
-                        </div>
 
-                        <div class="col col-md-1">
+		<!-- =========== GREENS SECT ====================== -->
 
-                            <p><em><strong>$7.99</strong></em></p>
+		<section class="food-greens-section">
 
-                        </div>
+			<div class="container">
 
-                    </div> <!-- row -->
+				<div class="fade-up-2">
 
-                    <div class="row menu-item">
+					<p class="additions">
+						<strong>Add protein to any salad</strong>
+						<br>
+						3.00 | Chicken
+						<br>
+						4.00 | Salmon
+						<br>
+						5.00 | Top Sirloin Coulotte
+						<br>
+						<strong>Dressings</strong> | balsamic vinaigrette, ranch, bleu cheese, Caesar, tequila lime or house vinaigrette
+					</p>
 
-                        <div class="col col-md-5">
+				</div>
 
-                            <h4>Black Bean Burger</h4>
-                            <p>House made spicy black bean burger with lettuce, tomato, red onion and vegan chipotle aioli served on a toasted challah bun.</p>
+				<div class="row menu-item">
 
-                        </div>
+					<div class="fade-up-2">
 
-                        <div class="col col-md-1">
+						<div class="col col-md-5">
 
-                            <p><em><strong>$9.99</strong></em></p>
+							<h4 class="pig-favorite">Salmon Salad</h4>
+							<p>Fresh mixed greens topped with seared Atlantic salmon, oven roasted, marinated tomatoes, cucumber salad, red
+								onion and radish sprouts, drizzled with olive oil and rasberry red wine vinegar.</p>
 
-                        </div>
+						</div>
 
-                        <div class="col col-md-5">
+						<div class="col col-md-1">
 
-                            <h4>Buffalo Tiger Wrap</h4>
-                            <p>Tiger wings tossed in buffalo sauce, wrapped in a warm spinach tortilla with fresh mixed mesclun greens, tomatoes, English cucumbers and served with a side of Vegan ranch dressing.</p>
+							<p><em><strong>$14.99</strong></em></p>
 
-                        </div>
+						</div>
 
-                        <div class="col col-md-1">
+						<div class="col col-md-5">
 
-                            <p><em><strong>$10.99</strong></em></p>
+							<h4>Southwestern Cobb Salad</h4>
+							<p>Fresh spinach tossed in tequila lime vinaigrette, topped with Applewood smoked bacon, sweet corn, black
+								beans, red onion, heirloom cherry tomatoes, Applewood smoked bleu cheese, tortilla strips, hard boiled egg and
+								sliced avocado.</p>
 
-                        </div>
+						</div>
 
-                    </div> <!-- row -->
+						<div class="col col-md-1">
 
-                    <div class="row menu-item">
+							<p><em><strong>$13.99</strong></em></p>
 
-                        <div class="col col-md-5">
+						</div>
 
-                            <h4>Banh Mi Portabella</h4>
-                            <p>Marinated, baked portabella mushroom topped with fresh pickled carrot, fresh pickled jalapeno, fresh cilantro and sriracha vegan aioli on an ambassador roll.</p>
+					</div>
 
-                        </div>
+				</div> <!-- row -->
 
-                        <div class="col col-md-1">
+				<div class="row menu-item">
 
-                            <p><em><strong>$11.99</strong></em></p>
+					<div class="fade-up-2">
 
-                        </div>
+						<div class="col col-md-5">
 
-                        <div class="col col-md-5">
+							<h4>Steak &amp; Arugula Salad</h4>
+							<p>Fresh arugula topped with Top Sirloin Coulotte steak, heirloom cherry tomatoes, julienne red onion and
+								pecorino cheese.</p>
 
-                            <h4>Vegan Avocado Rolls</h4>
-                            <p>Hand made eggrolls with chick'n, vegan bacon bits, black beans, avocado, vegan mozzarella and tomato, served with vegan ranch and agave blackberry jalapeno sauce.</p>
+						</div>
 
-                        </div>
+						<div class="col col-md-1">
 
-                        <div class="col col-md-1">
+							<p><em><strong>$14.99</strong></em></p>
 
-                            <p><em><strong>$9.99</strong></em></p>
+						</div>
 
-                        </div>
+						<div class="col col-md-5">
 
-                    </div> <!-- row -->
+							<h4>Smoked Buffalo Chicken Salad</h4>
+							<p>Buttermilk marinated chicken breast, fried &amp; tossed in Buffalo sauce, on fresh romaine with Applewood
+								smoked bacon, herloom cherry tomatoes, julienne red onion and Applewood smoked bleu cheese crumbles with Bleu
+								Cheese dressing.</p>
 
-                    <div class="row menu-item">
+						</div>
 
-                        <div class="col col-md-5 last-item">
+						<div class="col col-md-1">
 
-                            <h4>Angry Vegan Chick'n Sandwich</h4>
-                            <p>Vegan chick'n, saut&eacute;ed onion &amp; jalapenos, chao coconut cheese, Cajun vegan bacon, lettuce and tomato with vegan chipotle aioli on an ambassador roll.</p>
+							<p><em><strong>$9.99</strong></em></p>
 
-                        </div>
+						</div>
 
-                        <div class="col col-md-1">
+					</div>
 
-                            <p><em><strong>$12.99</strong></em></p>
+				</div> <!-- row -->
 
-                        </div>
+				<div class="row menu-item">
 
-                    </div> <!-- row -->
+					<div class="fade-up-2">
 
-                </div> <!-- container -->
+						<div class="col col-md-5">
 
-            </section> <!-- vegan -->        
+							<h4>Classic Caesar Salad</h4>
+							<p>Fresh romaine, house made croutons, shaved Parmesan and creamy Caesar dressing. Add chicken for <em><strong>$3.00</strong></em>
+								or salmon for <em><strong>$6.00</strong></em> more</p>
 
-    </div> <!-- menu-vegan -->
-    
-    
-    
-    <!-- =========== LATE NIGHT MENU ====================== -->
-  
-    <div id="menu-late-night">
-        
+						</div>
 
-        <!-- =========== LATE NIGHT BANNER ====================== -->
+						<div class="col col-md-1">
 
-            <section class="banner food-late-banner sub-menu-banner-gap">
+							<p><em><strong>$9.99</strong></em></p>
 
-                <div class="banner-container">
+						</div>
 
-                    <h3>Late Night</h3>
+						<div class="col col-md-5">
 
-                </div>
+							<h4>Dinner Salad</h4>
+							<p>Fresh mesclun mixed greens, tomato wedge, julienne red onions, English cucumbers and house made croutons.</p>
 
-            </section>
-            
+						</div>
 
-        <!-- =========== LATE NIGHT SECT ====================== -->
+						<div class="col col-md-1">
 
-            <section class="food-late-section">
+							<p><em><strong>$9.99</strong></em></p>
 
-                <div class="container">
+						</div>
 
-                    <p class="additions">Late Night Menu starts at 10:00p and kitchen closes at 12:00a.</p>
+					</div>
 
-                    <div class="row menu-item">
+				</div> <!-- row -->
 
-                        <div class="col col-md-5">
+				<div class="row menu-item">
 
-                            <h4 class="pig-favorite">Chile Verde Nachos*</h4>
-                            <p>House cut tortilla chips smothered in chile verde and melted cheddar jack cheese then topped with jalapeno, red onion, olives, tomato, green onion, salsa, sour cream and cilantro.</p>
+					<div class="fade-up-2">
 
-                        </div>
+						<div class="col col-md-5 last-item">
 
-                        <div class="col col-sm-1">
+							<h4>Soup of The Day</h4>
+							<p>Soup prepared from scratch daily. Ask server for details.</p>
 
-                            <p><em><strong>$11.99</strong></em></p>
+							<div class="row">
 
-                        </div>
+								<div class="col col-md-6">
 
-                        <div class="col col-md-5">
+									<p><em><strong>Cup</strong></em></p>
 
-                            <h4>House Wings*</h4>
-                            <p>A dozen jumbo wings tossed with your choice of traditional Buffalo hot sauce, honey Sriracha sauce, house BBQ sauce, or blackened, served with carrots, celery and ranch or bleu cheese dressing.</p>
+								</div>
 
-                        </div>
+								<div class="col col-md-6">
 
-                        <div class="col col-md-1">
+									<p><em><strong>$4.99</strong></em></p>
 
-                            <p><em><strong>$12.99</strong></em></p>
+								</div>
 
-                        </div>
+								<div class="col col-md-6">
 
-                    </div> <!-- row -->
+									<p><em><strong>Bowl</strong></em></p>
 
-                    <div class="row menu-item">
+								</div>
 
-                        <div class="col col-md-5">
+								<div class="col col-md-6">
 
-                            <h4>Angus Beef Sliders*</h4>
-                            <p>3 Hand pressed 2 oz. Angus beef patties topped with caramelized onions, bacon bits, and chipotle aioli.</p>
+									<p><em><strong>$5.99</strong></em></p>
 
-                        </div>
+								</div>
 
-                        <div class="col col-md-1">
+							</div>
 
-                            <p><em><strong>$8.99</strong></em></p>
+						</div>
 
-                        </div>
+					</div>
 
-                        <div class="col col-md-5">
+				</div> <!-- row -->
 
-                            <h4 class="pig-favorite">The Green Pig Quesadilla</h4>
-                            <p>Grilled Chipotle tortilla stuffed with cheddar jack cheese, black beans, onion and tomato, finshed with roasted red pepper sauce and sour cream. Add chile verde or chicken for <em><strong>$3.00</strong></em> or marinated steak for <em><strong>$4.00</strong></em> more</p>
+			</div> <!-- container -->
 
-                        </div>
+		</section> <!-- bowls n greens -->
 
-                        <div class="col col-md-1">
 
-                            <p><em><strong>$8.99</strong></em></p>
+		<!-- =========== GREENS BANNER ====================== -->
 
-                        </div>
+		<div class="fade-up">
 
-                    </div> <!-- row -->
+			<section id="specials" class="banner food-greens-banner">
 
-                    <div class="row menu-item">
+				<div class="banner-container">
 
-                        <div class="col col-md-5">
+					<h3>Daily Specials</h3>
 
-                            <h4>Chicken Tender Basket</h4>
-                            <p>3 large battered chicken tenders, served with hand cut, house fries and your choice of dipping sauce: chipotle ranch, jalapeno ranch, house BBQ or buffalo.</p>
+				</div>
 
-                        </div>
+			</section>
 
-                        <div class="col col-md-1">
+		</div>
 
-                            <p><em><strong>$9.99</strong></em></p>
+		<!-- =========== GREENS SECT ====================== -->
 
-                        </div>
+		<section class="daily-specials-section">
 
-                        <div class="col col-md-5">
+			<div class="container">
 
-                            <h4>The 31st East Avocado Rolls</h4>
-                            <p>House made eggrolls filled with chicken, bacon, black beans, avocado, tomato and cheddar jack cheese, served with jalapeno ranch or chipotle ranch.</p>
+				<!-- <div class="fade-up-2">
 
-                        </div>
+					<p class="additions">
+						<strong>Add protein to any salad</strong>
+						<br>
+						3.00 | Chicken
+						<br>
+						4.00 | Salmon
+						<br>
+						5.00 | Top Sirloin Coulotte
+						<br>
+						<strong>Dressings</strong> | balsamic vinaigrette, ranch, bleu cheese, Caesar, tequila lime or house vinaigrette
+					</p>
 
-                        <div class="col col-md-1">
+				</div> -->
 
-                            <p><em><strong>$9.99</strong></em></p>
+				<div class="row menu-item">
 
-                        </div>
+					<div class="fade-up-2">
 
-                    </div> <!-- row -->
+						<div class="col col-md-5 last-item">
 
-                    <div class="row menu-item">
+							<!-- <h4>Daily Specials</h4> -->
+							<p>Lunch Special M-F until 4:30 pm</p>
+							<p>Everyday is all day everyday</p>
 
-                        <div class="col col-md-5">
+							<div class="row">
 
-                            <h4>Vegan Avocado Rolls</h4>
-                            <p>Hand made eggrolls with chick'n, vegan bacon bits, black beans, avocado, vegan mozzarella and tomato, served with vegan ranch and agave blackberry jalapeno sauce.</p>
+								<div class="col col-md-6">
 
-                        </div>
+									<p><em><strong>Lunch</strong></em></p>
 
-                        <div class="col col-md-1">
+								</div>
 
-                            <p><em><strong>$9.99</strong></em></p>
+								<div class="col col-md-6">
 
-                        </div>
+									<p><em><strong>$5.99</strong></em></p>
 
-                        <div class="col col-md-5">
+								</div>
 
-                            <h4>Vegan Tiger Wings</h4>
-                            <p>A dozen vegan wings tossed in your choice of traditional Buffalo hot sauce, honey Sriracha sauce or house BBQ sauce, served with carrots, celery and vegan ranch or vegan bleu cheese dressing.</p>
+								<div class="col col-md-6">
 
-                        </div>
+									<p><em><strong>Everyday</strong></em></p>
 
-                        <div class="col col-md-1">
+								</div>
 
-                            <p><em><strong>$12.99</strong></em></p>
+								<div class="col col-md-6">
 
-                        </div>
+									<p><em><strong>$8.50</strong></em></p>
 
-                    </div> <!-- row -->
+								</div>
 
-                    <div class="row menu-item">
+							</div>
 
-                        <div class="col col-md-5">
+						</div>
 
-                            <h4>Dinner Salad</h4>
-                            <p>Fresh mesclun mixed greens, tomato wedge, julienne red onions, English cucumbers and house made croutons.</p>
+					</div>
 
-                        </div>
+				</div> <!-- row -->
 
-                        <div class="col col-md-1">
+			</div>
 
-                            <p><em><strong>$9.99</strong></em></p>
+		</section>
 
-                        </div>
+	</div> <!-- menu-classic -->
 
-                        <div class="col col-md-5">
 
-                            <h4>House Fries*</h4>
-                            <p>Fresh Idaho potatoes, hand cut, double fried and tossed in house seasoning, served with Utah Fry Sauce. Add cheese and bacon crumbles <em><strong>$3.00</strong></em></p>
 
-                        </div>
+	<!-- =========== VEGAN MENU ====================== -->
 
-                        <div class="col col-md-1">
+	<div id="menu-vegan">
 
-                            <p><em><strong>$5.99</strong></em></p>
 
-                        </div>
+		<!-- =========== VEGAN BANNER ====================== -->
 
-                    </div> <!-- row -->
+		<section class="banner food-vegan-banner sub-menu-banner-gap">
 
-                    <div class="row menu-item">
+			<div class="banner-container">
 
-                        <div class="col col-md-5">
+				<h3>Vegan</h3>
 
-                            <h4>Bavarian Pretzel &amp; Beer Cheese</h4>
-                            <p>2 soft pretzels served hot with Fat Tire Ale Beer Cheese and whole grain mustard.</p>
+			</div>
 
-                        </div>
+		</section>
 
-                        <div class="col col-md-1">
 
-                            <p><em><strong>$4.99</strong></em></p>
+		<!-- =========== VEGAN SECT ====================== -->
 
-                        </div>
+		<section class="food-vegan-section">
 
-                        <div class="col col-md-5">
+			<div class="container">
 
-                            <h4>Chips &amp; Salsa*</h4>
-                            <p>House cut tortilla chips served with salsa fresca. Add Guacamole <em><strong>3.50</strong></em></p>
+				<div class="row menu-item">
 
-                        </div>
+					<div class="col col-md-5">
 
-                        <div class="col col-md-1">
+						<h4>Vegan Tiger Wings</h4>
+						<p>A dozen vegan wings tossed in your choice of traditional Buffalo hot sauce, honey Sriracha sauce or house BBQ
+							sauce, served with carrots, celery and vegan ranch or vegan bleu cheese dressing.</p>
 
-                            <p><em><strong>$4.99</strong></em></p>
+					</div>
 
-                        </div>
+					<div class="col col-sm-1">
 
-                    </div> <!-- row -->
+						<p><em><strong>$12.99</strong></em></p>
 
-                </div> <!-- container -->
+					</div>
 
-            </section> <!-- late night -->
-           
-    </div> <!-- menu-late -->
-   
-   
-     
-    <!-- =========== BREAKFAST MENU ====================== -->
-   
-    <div id="menu-breakfast">
-        
+					<div class="col col-md-5">
 
-        <!-- =========== BREAKFAST BANNER ====================== -->
+						<h4>Sweet Tiger Tacos</h4>
+						<p>Tiger wings tossed in our traditional salsa verde served in 3 corn tortillas topped with shredded romaine
+							lettuce, guacamole and vegan sour cream with salsa fresca.</p>
 
-            <section class="banner food-breakfast-banner sub-menu-banner-gap">
+					</div>
 
-                <div class="banner-container">
+					<div class="col col-md-1">
 
-                    <h3>Breakfast</h3>
+						<p><em><strong>$10.99</strong></em></p>
 
-                </div>
+					</div>
 
-            </section>
-            
+				</div> <!-- row -->
 
-        <!-- =========== BREAKFAST SECT ====================== -->
+				<div class="row menu-item">
 
-            <section class="food-breakfast-section">
+					<div class="col col-md-5">
 
-                <div class="container">
+						<h4>Vegan Tacos</h4>
+						<p>Saut&eacute;ed peppers and onions, black beans and sweet corn served in 3 corn tortillas topped with cabbage,
+							green onions and tomato served with lime and salsa fresca.</p>
 
-                    <p class="additions">Breakfast is served every Saturday between 11:00a - 2:00p.</p>
+					</div>
 
-                    <div class="row menu-item">
+					<div class="col col-md-1">
 
-                        <div class="col col-md-5">
+						<p><em><strong>$9.99</strong></em></p>
 
-                            <h4>Green Pig Breakfast</h4>
-                            <p>2 eggs cooked to order, sausage, bacon, hash browns and fresh fruit.</p>
+					</div>
 
-                        </div>
+					<div class="col col-md-5">
 
-                        <div class="col col-md-1">
+						<h4>Rabbit Platter</h4>
+						<p>Fresh carrots, celery, heirloom cherry tomatoes, English cucumbers, and grilled pita bread served with house
+							made hummus and vegan ranch.</p>
 
-                            <p><em><strong>$8.50</strong></em></p>
+					</div>
 
-                        </div>
+					<div class="col col-md-1">
 
-                        <div class="col col-md-5">
+						<p><em><strong>$7.99</strong></em></p>
 
-                            <h4>Breakfast Burrito</h4>
-                            <p>Scrambled eggs, sausage, bacon, potatoes, peppers &amp; cheese in a flour tortilla served with fruit.</p>
+					</div>
 
-                        </div>
+				</div> <!-- row -->
 
-                        <div class="col col-md-1">
+				<div class="row menu-item">
 
-                            <p><em><strong>$8.50</strong></em></p>
+					<div class="col col-md-5">
 
-                        </div>
+						<h4>Black Bean Burger</h4>
+						<p>House made spicy black bean burger with lettuce, tomato, red onion and vegan chipotle aioli served on a
+							toasted challah bun.</p>
 
-                    </div> <!-- row -->
+					</div>
 
-                    <div class="row menu-item">
+					<div class="col col-md-1">
 
-                        <div class="col col-md-5">
+						<p><em><strong>$9.99</strong></em></p>
 
-                            <h4>French Toast</h4>
-                            <p>French toast with your choice of sausage or bacon served with fresh fruit.</p>
+					</div>
 
-                        </div>
+					<div class="col col-md-5">
 
-                        <div class="col col-md-1">
+						<h4>Buffalo Tiger Wrap</h4>
+						<p>Tiger wings tossed in buffalo sauce, wrapped in a warm spinach tortilla with fresh mixed mesclun greens,
+							tomatoes, English cucumbers and served with a side of Vegan ranch dressing.</p>
 
-                            <p><em><strong>$8.50</strong></em></p>
+					</div>
 
-                        </div>
+					<div class="col col-md-1">
 
-                        <div class="col col-md-5">
+						<p><em><strong>$10.99</strong></em></p>
 
-                            <h4>Mac Pig Sandwich</h4>
-                            <p>Egg, cheese &amp; your choice of ham, bacon, sausage or corned beef served with hash browns and fresh fruit.</p>
+					</div>
 
-                        </div>
+				</div> <!-- row -->
 
-                        <div class="col col-md-1">
+				<div class="row menu-item">
 
-                            <p><em><strong>$7.50</strong></em></p>
+					<div class="col col-md-5">
 
-                        </div>
+						<h4>Banh Mi Portabella</h4>
+						<p>Marinated, baked portabella mushroom topped with fresh pickled carrot, fresh pickled jalapeno, fresh cilantro
+							and sriracha vegan aioli on an ambassador roll.</p>
 
-                    </div> <!-- row -->
+					</div>
 
-                    <div class="row menu-item">
+					<div class="col col-md-1">
 
-                        <div class="col col-md-5 last-item">
+						<p><em><strong>$11.99</strong></em></p>
 
-                            <h4>Huevos Rancheros</h4>
-                            <p>3 fried eggs with black beans, ranchero salsa on corn tortillas with avocado &amp; queso fresco.</p>
+					</div>
 
-                        </div>
+					<div class="col col-md-5">
 
-                        <div class="col col-md-1">
+						<h4>Vegan Avocado Rolls</h4>
+						<p>Hand made eggrolls with chick'n, vegan bacon bits, black beans, avocado, vegan mozzarella and tomato, served
+							with vegan ranch and agave blackberry jalapeno sauce.</p>
 
-                            <p><em><strong>$8.50</strong></em></p>
+					</div>
 
-                        </div>
+					<div class="col col-md-1">
 
-                    </div> <!-- row -->
+						<p><em><strong>$9.99</strong></em></p>
 
-                </div> <!-- container -->
+					</div>
 
-            </section> <!-- breakfast -->
+				</div> <!-- row -->
 
-    </div> <!-- menu-breakfast -->
-    
-    
-    
-    
-    
-    
-    <!-- ======= FOOTER ========================== -->
+				<div class="row menu-item">
 
-    <div class="fade-up">
+					<div class="col col-md-5 last-item">
 
-        <footer>
+						<h4>Angry Vegan Chick'n Sandwich</h4>
+						<p>Vegan chick'n, saut&eacute;ed onion &amp; jalapenos, chao coconut cheese, Cajun vegan bacon, lettuce and
+							tomato with vegan chipotle aioli on an ambassador roll.</p>
 
-            <div class="container">
+					</div>
 
-                <div class="row">
+					<div class="col col-md-1">
 
-                    <div class="col col-md-4">
+						<p><em><strong>$12.99</strong></em></p>
 
-                        <h4>Hours</h4>
+					</div>
 
-                        <ul class="hours">
-                            <li><i class="fa fa-clock-o"></i> Mon-Sat 11:00a - 1:00a</li>
-                            <li><i class="fa fa-tv"></i> Sun 10:00a - 1:00a</li>
-                            <li><i class="fa fa-phone"></i> Phone : (801)532-7441</li>
-                            <li><i class="fa fa-address-book"></i> <a target="_blank" href="https://www.google.com/maps/place/The+Green+Pig+Pub/@40.7609285,-111.8920536,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f51053a20201:0x854e30471263b928!8m2!3d40.7609285!4d-111.8898649">31 E 400 S, Salt Lake City</a></li>
-                        </ul> 
+				</div> <!-- row -->
 
-                    </div>
+			</div> <!-- container -->
 
-                    <div class="col col-md-4">
+		</section> <!-- vegan -->
 
-                        <h4>Follow Us</h4>
+	</div> <!-- menu-vegan -->
 
-                        <div class="row social">
 
-                            <div class="col col-xs-4">
 
-                                <a class="social-badge facebook" href=""><i class="fab fa-facebook-f"></i></a>
+	<!-- =========== LATE NIGHT MENU ====================== -->
 
-                            </div> <!-- col -->
+	<div id="menu-late-night">
 
-                            <div class="col col-xs-4">
 
-                                <a class="social-badge instagram" href=""><i class="fab fa-instagram"></i></a>
+		<!-- =========== LATE NIGHT BANNER ====================== -->
 
-                            </div> <!-- col -->
+		<section class="banner food-late-banner sub-menu-banner-gap">
 
-                            <div class="col col-xs-4">
+			<div class="banner-container">
 
-                                <a class="social-badge twitter" href=""><i class="fab fa-twitter"></i></a>
+				<h3>Late Night</h3>
 
-                            </div> <!-- col -->
+			</div>
 
-                        </div> <!-- row -->
+		</section>
 
-                    </div> <!-- col -->
 
-                    <div class="col col-md-4">
+		<!-- =========== LATE NIGHT SECT ====================== -->
 
-                        <h4>Location</h4>
+		<section class="food-late-section">
 
-                        <div id="map-footer"></div>   
+			<div class="container">
 
-                    </div>
+				<p class="additions">Late Night Menu starts at 10:00p and kitchen closes at 12:00a.</p>
 
-                </div> <!-- row -->
+				<div class="row menu-item">
 
-                <p>Site Creator: <a href="http://www.mckaywebdesign.com/home/index/" target="_blank">Caleb Anderson</a></p>
-                <p>Copyright &copy; 2018 - The Green Pig Pub</p>
+					<div class="col col-md-5">
 
-            </div> <!-- container -->
+						<h4 class="pig-favorite">Chile Verde Nachos*</h4>
+						<p>House cut tortilla chips smothered in chile verde and melted cheddar jack cheese then topped with jalapeno,
+							red onion, olives, tomato, green onion, salsa, sour cream and cilantro.</p>
 
-        </footer>
+					</div>
 
-    </div>
-    
-   
-    
-    <!-- ======= JAVASCRIPT ========================== -->
-    
-    <script src="./assets/Jquery/jquery-3.2.1.min.js"></script>    
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eaFIZjEFVyTS2IqNtCbIL4960EfhByw&callback=initMap">
-    </script>
-    <script src="./assets/js/mobile_nav.js"></script>
-    <script src="./assets/js/sub-nav.js"></script>
-    <script src="./assets/js/scrolling_nav.js"></script>
-    <script src="./assets/js/map-footer.js"></script>
-    <script src="./assets/js/fade_on_scroll.js"></script>
-    
+					<div class="col col-sm-1">
+
+						<p><em><strong>$11.99</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>House Wings*</h4>
+						<p>A dozen jumbo wings tossed with your choice of traditional Buffalo hot sauce, honey Sriracha sauce, house BBQ
+							sauce, or blackened, served with carrots, celery and ranch or bleu cheese dressing.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$12.99</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>Angus Beef Sliders*</h4>
+						<p>3 Hand pressed 2 oz. Angus beef patties topped with caramelized onions, bacon bits, and chipotle aioli.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$8.99</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4 class="pig-favorite">The Green Pig Quesadilla</h4>
+						<p>Grilled Chipotle tortilla stuffed with cheddar jack cheese, black beans, onion and tomato, finshed with
+							roasted red pepper sauce and sour cream. Add chile verde or chicken for <em><strong>$3.00</strong></em> or
+							marinated steak for <em><strong>$4.00</strong></em> more</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$8.99</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>Chicken Tender Basket</h4>
+						<p>3 large battered chicken tenders, served with hand cut, house fries and your choice of dipping sauce: chipotle
+							ranch, jalapeno ranch, house BBQ or buffalo.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$9.99</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>The 31st East Avocado Rolls</h4>
+						<p>House made eggrolls filled with chicken, bacon, black beans, avocado, tomato and cheddar jack cheese, served
+							with jalapeno ranch or chipotle ranch.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$9.99</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>Vegan Avocado Rolls</h4>
+						<p>Hand made eggrolls with chick'n, vegan bacon bits, black beans, avocado, vegan mozzarella and tomato, served
+							with vegan ranch and agave blackberry jalapeno sauce.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$9.99</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>Vegan Tiger Wings</h4>
+						<p>A dozen vegan wings tossed in your choice of traditional Buffalo hot sauce, honey Sriracha sauce or house BBQ
+							sauce, served with carrots, celery and vegan ranch or vegan bleu cheese dressing.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$12.99</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>Dinner Salad</h4>
+						<p>Fresh mesclun mixed greens, tomato wedge, julienne red onions, English cucumbers and house made croutons.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$9.99</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>House Fries*</h4>
+						<p>Fresh Idaho potatoes, hand cut, double fried and tossed in house seasoning, served with Utah Fry Sauce. Add
+							cheese and bacon crumbles <em><strong>$3.00</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$5.99</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>Bavarian Pretzel &amp; Beer Cheese</h4>
+						<p>2 soft pretzels served hot with Fat Tire Ale Beer Cheese and whole grain mustard.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$4.99</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>Chips &amp; Salsa*</h4>
+						<p>House cut tortilla chips served with salsa fresca. Add Guacamole <em><strong>3.50</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$4.99</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+			</div> <!-- container -->
+
+		</section> <!-- late night -->
+
+	</div> <!-- menu-late -->
+
+
+
+	<!-- =========== BREAKFAST MENU ====================== -->
+
+	<div id="menu-breakfast">
+
+
+		<!-- =========== BREAKFAST BANNER ====================== -->
+
+		<section class="banner food-breakfast-banner sub-menu-banner-gap">
+
+			<div class="banner-container">
+
+				<h3>Breakfast</h3>
+
+			</div>
+
+		</section>
+
+
+		<!-- =========== BREAKFAST SECT ====================== -->
+
+		<section class="food-breakfast-section">
+
+			<div class="container">
+
+				<p class="additions">Breakfast is served every Saturday between 11:00a - 2:00p.</p>
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>Green Pig Breakfast</h4>
+						<p>2 eggs cooked to order, sausage, bacon, hash browns and fresh fruit.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$8.50</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>Breakfast Burrito</h4>
+						<p>Scrambled eggs, sausage, bacon, potatoes, peppers &amp; cheese in a flour tortilla served with fruit.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$8.50</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5">
+
+						<h4>French Toast</h4>
+						<p>French toast with your choice of sausage or bacon served with fresh fruit.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$8.50</strong></em></p>
+
+					</div>
+
+					<div class="col col-md-5">
+
+						<h4>Mac Pig Sandwich</h4>
+						<p>Egg, cheese &amp; your choice of ham, bacon, sausage or corned beef served with hash browns and fresh fruit.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$7.50</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<div class="row menu-item">
+
+					<div class="col col-md-5 last-item">
+
+						<h4>Huevos Rancheros</h4>
+						<p>3 fried eggs with black beans, ranchero salsa on corn tortillas with avocado &amp; queso fresco.</p>
+
+					</div>
+
+					<div class="col col-md-1">
+
+						<p><em><strong>$8.50</strong></em></p>
+
+					</div>
+
+				</div> <!-- row -->
+
+			</div> <!-- container -->
+
+		</section> <!-- breakfast -->
+
+	</div> <!-- menu-breakfast -->
+
+
+
+
+
+
+	<!-- ======= FOOTER ========================== -->
+
+	<div class="fade-up">
+
+		<footer>
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col col-md-4">
+
+						<h4>Hours</h4>
+
+						<ul class="hours">
+							<li><i class="fa fa-clock-o"></i> Mon-Sat 11:00a - 1:00a</li>
+							<li><i class="fa fa-tv"></i> Sun 10:00a - 1:00a</li>
+							<li><i class="fa fa-phone"></i> Phone : (801)532-7441</li>
+							<li><i class="fa fa-address-book"></i> <a target="_blank" href="https://www.google.com/maps/place/The+Green+Pig+Pub/@40.7609285,-111.8920536,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f51053a20201:0x854e30471263b928!8m2!3d40.7609285!4d-111.8898649">31
+									E 400 S, Salt Lake City</a></li>
+						</ul>
+
+					</div>
+
+					<div class="col col-md-4">
+
+						<h4>Follow Us</h4>
+
+						<div class="row social">
+
+							<div class="col col-xs-4">
+
+								<a class="social-badge facebook" href=""><i class="fab fa-facebook-f"></i></a>
+
+							</div> <!-- col -->
+
+							<div class="col col-xs-4">
+
+								<a class="social-badge instagram" href=""><i class="fab fa-instagram"></i></a>
+
+							</div> <!-- col -->
+
+							<div class="col col-xs-4">
+
+								<a class="social-badge twitter" href=""><i class="fab fa-twitter"></i></a>
+
+							</div> <!-- col -->
+
+						</div> <!-- row -->
+
+					</div> <!-- col -->
+
+					<div class="col col-md-4">
+
+						<h4>Location</h4>
+
+						<div id="map-footer"></div>
+
+					</div>
+
+				</div> <!-- row -->
+
+				<p>Site Creator: <a href="http://www.mckaywebdesign.com/home/index/" target="_blank">Caleb Anderson</a></p>
+				<p>Copyright &copy; 2018 - The Green Pig Pub</p>
+
+			</div> <!-- container -->
+
+		</footer>
+
+	</div>
+
+
+
+	<!-- ======= JAVASCRIPT ========================== -->
+
+	<script src="./assets/Jquery/jquery-3.2.1.min.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eaFIZjEFVyTS2IqNtCbIL4960EfhByw&callback=initMap">
+	</script>
+	<script src="./assets/js/mobile_nav.js"></script>
+	<script src="./assets/js/sub-nav.js"></script>
+	<script src="./assets/js/scrolling_nav.js"></script>
+	<script src="./assets/js/map-footer.js"></script>
+	<script src="./assets/js/fade_on_scroll.js"></script>
+
 </body>
+
 </html>

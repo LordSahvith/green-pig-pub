@@ -1,0 +1,192 @@
+.hero-drinks {
+    background: url(../img/drinks_banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.drinks-cocktails-banner {
+    background: url(../img/tray_of_drinks_banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.drinks-patio-banner {
+    background: url(../img/patio_bar_in.JPG) center center no-repeat;
+    background-size: cover;
+}
+
+.drinks-beer-banner {
+    background: url(../img/beer_line_up_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.drinks-white-wine-banner {
+    background: url(../img/wine-white_2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.drinks-red-wine-banner {
+    background: url(../img/wine-red_2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.drinks-daily-specials-banner {
+    background: url(../img/daily_specials_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+@media screen and (min-width: 980px) {
+    
+    #menu-beers-btn {
+        padding-right: 10px;
+        margin-right: 20px;
+    }
+    
+    #menu-wines-btn {
+        margin-left: 40px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    
+    #menu-daily-specials-btn {
+        padding-right: 0;
+        padding-left: 70px;
+    }
+    
+}
+
+
+
+/* =========== BEER SECT ====================== */
+
+.drinks-beer-section {
+    margin-bottom: -130px;
+}
+
+.title {
+    padding-bottom: 10px;
+}
+
+.sub-title {
+    padding-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.sub-title-alone {
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.reverse-margin {
+    margin-top: -30px;
+    padding-bottom: 10px;
+}
+
+.title-gap {
+    margin-bottom: 30px;
+}
+
+.beer-sect {
+    font-size: 1rem;
+    padding-bottom: 150px;
+}
+
+.beer-sect:last-child {
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 750px) {
+    .beer-sect {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .beer-sect {
+        font-size: 1.15rem;
+    }
+}
+
+.beer-item {
+    padding-bottom: 30px;
+}
+
+.beer-inline-block {
+    display: inline-block;
+}
+
+.beer-percent-full,
+.beer-percent-full-last {
+    width: 13%;
+    text-align: left;
+}
+
+.beer-title-full,
+.beer-title-full-last {
+    width: 75%;
+    text-align: center;
+}
+
+.beer-price-full,
+.beer-price-full-last {
+    width: 7%;
+    text-align: right;
+}
+
+@media screen and (min-width: 980px) {    
+    .beer-percent-last {
+        width: 10%;
+    }
+    
+    .beer-title-full-last {
+        width: 40%;
+    }
+    
+    .beer-price-full-last {
+        width: 10%;
+    }
+}
+
+.gluten-free {
+    color: #4dbb04;
+}
+
+.varies {
+    font-size: .7em;
+}
+
+.beer-title-draft,
+.beer-title-draft-last {
+    width: 80%;
+    text-align: left;
+}
+
+.beer-price-draft,
+.beer-price-draft-last {
+    width: 9%;
+    text-align: right;
+    margin-right: 25px;
+}
+
+@media screen and (min-width: 980px) {        
+    .beer-title-draft-last {
+        width: 40%;
+    }
+    
+    .beer-price-draft-last {
+        width: 10%;
+    }
+}
+
+.daily-specials-left {
+    text-align: left;
+}
+
+
+.daily-specials-right {
+    text-align: right;
+}
+
+
+
+

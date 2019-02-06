@@ -1,0 +1,49 @@
+.hero {
+    height: 400px;
+    background-color: #333;
+    padding-top: 110px;
+}
+
+.hero-container {
+    margin: 0 auto;
+    max-width: 200px;
+    padding-top: 130px;
+}
+
+.hero h2 {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 670px) {
+    .hero {    
+        height: 565px;
+    }
+    
+    .hero-container {
+        max-width: 250px;
+        padding-top: 180px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .hero {    
+        height: 670px;
+    }
+    
+    .hero-container {
+        max-width: 300px;
+        padding-top: 230px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {    
+        height: 750px;
+    }
+    
+    .hero-container {
+        padding-top: 300px;
+    }
+}

@@ -1,0 +1,47 @@
+/*
+    light green - #aee238
+    dark green  - #4dbb04
+*/
+
+.menu-item {
+    text-align: left;
+    padding-top: 40px;
+}
+
+.menu-item h4 {
+    font-size: 1.5em;
+}
+
+.menu-item div:nth-child(1) {
+    margin-right: -20px;
+}
+
+.menu-item div:nth-child(2) {
+    padding-right: 0px;
+    margin-right: 20px;
+}
+
+.menu-item div:nth-child(2) {
+    padding-bottom: 40px;
+}
+
+.last-item {
+    margin-left: 0;
+}
+
+.last-item div:nth-child(2) {
+    padding-bottom: 0;
+}
+
+@media screen and (min-width: 980px) {    
+    .last-item { margin-left: 27%; }    
+}
+
+
+.pig-favorite {
+    color: #4dbb04;
+}
+
+.additions {
+    font-size: 1.2rem;
+}

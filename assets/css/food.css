@@ -1,0 +1,62 @@
+.hero-food {
+    background: url(../img/cheesesteak-2.jpg) center center no-repeat;
+    background-size: cover;
+} 
+
+.food-starters-banner {
+    background: url(../img/nachos_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-specialties-banner {
+    background: url(../img/salmon_tacos_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-sandwiches-banner {
+    background: url(../img/cuban.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-burgers-banner {
+    background: url(../img/denver-2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-greens-banner {
+    background: url(../img/salmon_salad_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-vegan-banner {
+    background: url(../img/angry_vegan_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-breakfast-banner {
+    background: url(../img/bacon_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.food-late-banner {
+    background: url(../img/quesa.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 980px) {
+    
+    #menu-vegan-btn {
+        margin-right: 20px;
+        padding-left: 20px;
+    }
+
+    #menu-late-night-btn {
+        padding-left: 20px;
+    }
+
+    #menu-late-night-btn,
+    #menu-breakfast-btn {
+        padding-right: 0;
+    }
+    
+}

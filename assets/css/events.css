@@ -1,0 +1,121 @@
+.hero-events {
+    background: #333 url(../img/events_hero.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.intro-events {
+    padding-bottom: 60px;
+}
+
+.intro {
+    padding-bottom: 90px;
+}
+
+.intro .button {
+    margin-left: -90px;
+}
+
+.sub-menu-event.sub-fixed {
+    padding-top: 20px;
+}
+
+
+/* ============= EVENTS MENU ================= */
+
+.event-menu-btn {
+    background: none;
+    border: none;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.event-menu-btn:hover {
+    color: #4dbb04;
+    cursor: pointer;
+}
+
+.events-icon {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+.date {
+    display: block;
+    padding-top: 5px;
+}
+
+.pick-a-day {
+    opacity: 0;
+    display: none;
+    transition: opacity .5s;
+}
+
+@media screen and (min-width: 750px) {    
+    .event-menu-btn {
+        margin-bottom: 35px;
+    }    
+}
+
+@media screen and (min-width: 980px) {
+    .pick-a-day {
+        opacity: 1;
+        display: inline-block;
+    }
+}
+
+
+
+/* ============= MONDAY EVENTS ================= */
+
+.events-mon-banner {
+    background: #333 url(../img/blues_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= TUESDAY EVENTS ================= */
+
+.events-tue-banner {
+    background: #333 url(../img/paint_event.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= WEDNESDAY EVENTS ================= */
+
+.events-wed-banner {
+    background: #333 url(../img/events_hero.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= THURSDAY EVENTS ================= */
+
+.events-thur-banner {
+    background: #333 url(../img/karaoke_banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= FRIDAY EVENTS ================= */
+
+.events-fri-banner {
+    background: #333 url(../img/live_music_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= SATURDAY EVENTS ================= */
+
+.events-sat-banner {
+    background: #333 url(../img/dj_latu_banner-5.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* ============= SUNDAY EVENTS ================= */
+
+.events-sun-banner {
+    background: #333 url(../img/buffet_line_up.jpg) center center no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,77 @@
+/* ==== SCROLLING NAV ==== */
+
+.scrolling-menu {
+    position: fixed;
+    top: 33%;
+    height: auto;
+    width: auto;
+    right: 0px;
+    padding: 10px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .8s;
+}
+
+.hide {
+    transform: translateX(100%);
+}
+
+.unhide {
+    transform: translateX(0);
+}
+
+.slide {
+    transform: translateX(150%);
+}
+
+.scrolling-menu ul li {
+    padding: 15px 10px;
+    display: block;
+    text-align: right;
+    transition: all .3s;
+}
+
+.scrolling-btn {
+    padding: 0;
+    font-size: 1.1rem;
+    color: #FFF;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.01);
+    text-transform: capitalize;
+    font-family: 'Bitter', 'Open Sans', sans-serif;
+    transition: all .4s;
+}
+
+.scrolling-btn:hover {
+    cursor: pointer;
+    color: #4dbb04;
+}
+
+.scroll-hide {
+    position: absolute;
+    top: 40%;    
+    left: -25px;
+}
+
+.scroll-hide-btn {
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-radius: 100%;
+    transition: all .8s;
+}
+
+.scroll-hide-btn:hover {
+    cursor: pointer;
+    color: #4dbb04;
+}
+
+.spin {
+    transform: rotate(-180deg);
+}
+
+
+
+
+
+

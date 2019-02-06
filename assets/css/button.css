@@ -1,0 +1,15 @@
+.button {
+    position: absolute;
+    padding: 20px 30px;
+    background-color: #aee238;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    color: #222;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: #4dbb04;
+    color: #222;
+    transform: scale(0.85);
+}

@@ -1,0 +1,30 @@
+/* ==== MENU SECTION ===== */
+
+.menu-opt {
+    height: 200px;
+    padding-top: 140px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 530px) {
+    .menu-opt {
+        height: 250px;
+        max-width: 400px;
+    }
+}
+
+.menu-opt h4 {
+    padding: 40px;
+    margin: 0 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-opt h4 {
+    transition: all 0.5s;            
+}
+
+.menu-opt:hover h4 {
+    transform: scale(0.8);
+}

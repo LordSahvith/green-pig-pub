@@ -1,0 +1,90 @@
+/* ==== BANNER ===== */
+
+.banner {
+    height: 300px;
+    background-size: cover;
+}
+
+.banner-container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 175px;
+    padding-top: 90px;
+}
+
+.sub-menu-banner-gap {
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 530px) {    
+    .banner {
+        height: 400px;
+    }
+    
+    .banner-container {        
+        max-width: 250px;
+        padding-top: 150px;
+    }
+}
+
+@media screen and (min-width: 750px) {     
+    .banner {
+        height: 450px;
+    }  
+    
+    .banner-container {        
+        max-width: 350px;
+        padding-top: 170px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .banner {
+        height: 550px;
+    }
+    
+    .banner-container {    
+        padding-top: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {        
+    .banner {
+        height: 600px;
+    }
+    
+    .banner-container {      
+        padding-top: 230px;
+    }
+}
+
+@media screen and (min-width: 1500px) {        
+    .banner {
+        height: 700px;
+    }
+    
+    .banner-container {      
+        padding-top: 270px;
+    }
+}
+
+.banner h3 {
+    padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.banner h3 a {
+    color: #FFF;
+}
+
+.banner h3 a:hover {
+    color: #4dbb04;
+}
+
+.banner-shrink h3 {
+    transition: all 0.5s;
+}
+
+.banner-shrink h3:hover {
+    transform: scale(0.85);
+}

@@ -1,0 +1,19 @@
+.hero-menu {
+    background: url(../img/table_view.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.menu-welcome-section div div > h3 {
+    padding-bottom: 40px;
+}
+
+.food {
+    background: url(../img/table_side_view_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+.drinks {
+    background: url(../img/drinks_1.jpg) center center no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,70 @@
+/* ==== WELCOME ===== */
+
+.welcome-hero {
+    height: 100vh;
+    background: #333 url(../img/welcome.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/* ==== THE PIG STORY ===== */
+
+.pig-story {
+    padding-bottom: 40px;
+}
+
+.pig-story h2 {
+    padding-bottom: 10px;
+}
+
+a#more-story {
+    margin-left: -110px;
+}
+
+
+/* ==== MENU BANNER ===== */
+
+.home-menu-banner {
+    background: #333 url(../img/table_view.jpg) center center no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+}
+
+.home-menu-options div div > h3 {
+    padding-bottom: 40px;
+}
+
+
+/* ==== EVENTS BANNER ===== */
+
+.home-events-banner {    
+    background: #333 url(../img/blues_1.jpg) center center no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+.home-events-section {
+    padding-bottom: 60px;
+}
+
+.home-events-section div div > h3 {
+    padding-bottom: 40px;
+}
+
+.home-gallery {
+    padding-bottom: 40px;
+}
+
+a#contact-us {
+    margin-left: -85px;
+}
+
+.food {
+    background: url(../img/table_side_view_1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+.drinks {
+    background: url(../img/drinks_1.jpg) center center no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events | Green Pig Pub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/sub_nav.css">
+    <link rel="stylesheet" href="./assets/css/events.css">
+    <link rel="stylesheet" href="./assets/css/menu_options.css">
+    <link rel="stylesheet" href="./assets/css/menu_item.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.0.4/web-fonts-with-css/css/fontawesome-all.min.css">
+    
+    <script src="./assets/Jquery/jquery-3.2.1.min.js"></script>  
+    <script src="./assets/js/instafeed.js"></script>
+    
+</head>
+<body>
+
+    <!-- =========== MAIN NAV ====================== -->
+
+    <nav class="nav-bar">
+
+        <div id="mobile-nav" class="overlay">            
+            <div class="overlay-content"> 
+                <div class="container">
+                    <a href="about.html">About</a>
+                    <a href="menus.html">Menus</a>
+                    <a class="sub-class" href="food.html">Food</a>
+                    <a class="sub-class" href="drinks.html">Drinks</a>
+                    <a href="events.html">Events</a>
+                    <a href="contact.html">Contact</a>   
+                </div>               
+            </div>
+
+        </div> <!-- mobile-nav -->
+
+        <div class="mobile-icon" onclick="toggleNav()">                
+            <div class="fade-up">
+                <div class="toggle-button"> 
+                    <div class="menu-bar menu-bar-top"></div>
+                    <div class="menu-bar menu-bar-middle"></div>
+                    <div class="menu-bar menu-bar-bottom"></div>     
+                </div>               
+            </div>                      
+        </div>    
+
+        <a href="index.html"><img class="logo logo-mobile" src="./assets/img/logo.png" alt="The Green Pig Pub Logo"></a>
+
+        <div class="main-nav fade-down">
+
+            <ul class="nav-items">
+                <li class="nav-item"><a href="about.html">About</a></li>                                
+                <li class="dropdown-btn nav-item">
+                    <a href="menus.html">Menus <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="food.html">Food</a></li>
+                            <li><a href="drinks.html">Drinks</a></li>
+                        </ul>
+                </li>                                                
+                <a href="index.html"><img class="logo logo-main" src="./assets/img/logo.png" alt="The Green Pig Pub Logo"></a>    
+                <li class="nav-item hide-home"><a href="index.html">home</a></li>                                
+                <li class="nav-item"><a href="events.html">Events</a></li>                                
+                <li class="nav-item"><a href="contact.html">Contact</a></li>                                
+            </ul>
+
+        </div> <!-- main-nav -->
+
+    </nav>
+
+
+
+    
+    <!-- ======= HERO ========================== -->
+  
+    <div class="fade-down">
+
+        <section class="hero hero-events">
+
+            <div class="hero-container">
+
+                <h2>Events</h2>
+
+            </div>
+
+        </section>
+
+    </div>
+
+   
+   
+   
+    <!-- =========== PAGE WELCOME ====================== -->
+    
+    <section class="welcome events-welcome">
+        
+        <div class="container">
+            
+            <div class="fade-left intro-events">
+                
+                <p>History is being made everyday. Trivia is humbling on Wednesdays, while blushing on Sundays. We got live music Mondays with Open Blues Jam, Thursdays with karaoke, Fridays live bands/artists of various genres and every Saturday is DJ Latu. Are you creating the correct history?</p>
+                
+            </div>
+
+            <div class="fade-right">
+                
+                <a href="https://www.facebook.com/pg/greenpigpub/events/?ref=page_internal" target="_blank"><h4>Upcoming Events</h4></a>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+   
+   
+   
+    <!-- =========== SUB MENU ====================== -->
+
+    <nav class="sub-menu sub-menu-event">
+
+        <div id="mobile-menu" class="overlay">
+
+            <div class="overlay-content">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>  
+
+                <div class="container">
+                    
+                    <div class="col col-xs-6 col-md-4">
+
+                        <button id="event-mon-btn" class="event-menu-btn" onclick="closeNav()">Mon <span id="mon-date" class="date"></span></button>
+                    
+                    </div>
+                    
+                    <div class="col col-xs-6 col-md-4">
+
+                        <button id="event-tue-btn" class="event-menu-btn" onclick="closeNav()">Tue <span id="tue-date" class="date"></span></button>
+                        
+                    </div>
+                    
+                    <div class="col col-xs-6 col-md-4">
+
+                        <button id="event-wed-btn" class="event-menu-btn" onclick="closeNav()">Wed <span id="wed-date" class="date"></span></button>
+                        
+                    </div>
+                    
+                    <div class="col col-xs-6 col-md-4">
+
+                        <button id="event-thu-btn" class="event-menu-btn" onclick="closeNav()">Thu <span id="thu-date" class="date"></span></button>
+                        
+                    </div>
+                    
+                    <div class="col col-xs-6 col-md-4">
+
+                        <button id="event-fri-btn" class="event-menu-btn" onclick="closeNav()">Fri <span id="fri-date" class="date"></span></button>
+                        
+                    </div>
+                    
+                    <div class="col col-xs-6 col-md-4">
+
+                        <button id="event-sat-btn" class="event-menu-btn" onclick="closeNav()">Sat <span id="sat-date" class="date"></span></button>
+                        
+                    </div>
+                    
+                    <div class="col">
+                        
+                        <button id="event-sun-btn" class="event-menu-btn" onclick="closeNav()">Sun <span id="sun-date" class="date"></span></button>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mobile-icon menu-icon" onclick="toggleMenu()">
+           
+            <div class="fade-up">
+            
+                <i class="fas fa-calendar-alt"></i>  
+                          
+            </div>
+            
+        </div> <!-- mobile-icon --> 
+
+        <div class="main-nav events-icon" onclick="toggleMenu()">
+           
+            <div class="fade-up">
+            
+                <i class="fas fa-calendar-alt"> <span class="pick-a-day">Daily Events</span></i>  
+                          
+            </div>
+            
+        </div> <!-- mobile-icon -->      
+
+    </nav>
+    
+   
+   
+
+    <!-- =========== MONDAY - BLUES JAM ====================== -->
+
+    <div id="event-mon">
+
+        <!-- =========== MONDAY - BLUES JAM BANNER ====================== -->
+
+        <div class="fade-up">
+
+            <section class="banner events-mon-banner sub-menu-banner-gap">
+
+                <div class="banner-container">
+
+                    <h3>Open Blues Jam</h3>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- =========== MONDAY - BLUES JAM SECT ====================== -->
+
+        <section class="events-mon-section">
+
+            <div class="container">
+
+                <div class="fade-left">
+
+                    <p>If you love playing, listening and dancing to blues then Monday nights at The Green Pig is the place for you. We have a live local blues band "West Temple Tail Draggers" that open up the night with a sign up sheet for others to join so bring your instrument and sign up to show off your passion for blues.</p>
+
+                </div>    
+                
+                <script>instafeed('greenpigbluesjam');</script>
+
+                <div class="row">
+
+                    <div class="fade-up-3">
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpigbluesjam0" src="./assets/img/blues_draggers_300w.jpg" alt="West Temple Tail Draggers.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpigbluesjam1" src="./assets/img/blues_jam_300w.jpg" alt="Open Blues Jam. Drummer close up.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpigbluesjam2" src="./assets/img/blues_draggers-1_300w.jpg" alt="West Temple Tail Draggers. Vocalist close up.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpigbluesjam3" src="./assets/img/blues_draggers_300w.jpg" alt="West Temple Tail Draggers. Drummer close up.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpigbluesjam4" src="./assets/img/blues_jam_300w.jpg" alt="Open Blues Jam.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpigbluesjam5" src="./assets/img/blues_draggers-1_300w.jpg" alt="West Temple Tail Draggers. Vocalist close up.">
+                            </div>
+
+                        </div>
+
+                    </div> <!-- fade-up-3 -->
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- mon section -->
+
+    </div> <!-- mon -->
+   
+   
+   
+    <!-- =========== TUESDAY - PAINT NITE ====================== -->
+
+    <div id="event-tue">
+
+        <!-- =========== TUESDAY - PAINT NITE BANNER ====================== -->
+
+        <section class="banner events-tue-banner sub-menu-banner-gap">
+
+            <div class="banner-container">
+
+                <h3>Locals Night out</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========== TUESDAY - PAINT NITE SECT ====================== -->
+
+        <section class="events-tue-section">
+
+            <div class="container">
+
+                <div class="intro">
+
+                    <p class="bottom-gap">Have an itch for painting but aren't familiar with the best techniques and practices? Too shy to paint in front of others? Grab a friend, a cup of liquid courage and come test your painting skills!</p>
+
+                </div>
+                
+                <script>instafeed('greenpiglocalsnight');</script>
+
+                <div class="row">
+
+                    <div class="fade-up-3">
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpiglocalsnight0" src="./assets/img/paint_nite-1_300w.jpg" alt="Paint Nite painters.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpiglocalsnight1" src="./assets/img/paint_nite-2_300w.jpg" alt="Paint Nite painters.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpiglocalsnight2" src="./assets/img/paint_nite-3_300w.jpg" alt="Paint Nite painters.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpiglocalsnight3" src="./assets/img/paint_nite-1_300w.jpg" alt="Paint Nite painters.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpiglocalsnight4" src="./assets/img/paint_nite-2_300w.jpg" alt="Paint Nite painters.">
+                            </div>
+
+                        </div>
+
+                        <div class="col col-sm-6 col-lg-4">
+
+                            <div class="gallery-item gallery-item-sm">
+                                <img id="greenpiglocalsnight5" src="./assets/img/paint_nite-3_300w.jpg" alt="Paint Nite painters.">
+                            </div>
+
+                        </div>
+
+                    </div> <!-- fade-left -->
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- tue section -->
+
+    </div> <!-- tue -->
+   
+   
+   
+    <!-- =========== WEDNESDAY - GENERAL TRIVIA ====================== -->
+
+    <div id="event-wed">
+
+        <!-- =========== WEDNESDAY - GENERAL TRIVIA BANNER ====================== -->
+
+        <section class="banner events-wed-banner sub-menu-banner-gap">
+
+            <div class="banner-container">
+
+                <h3>General Trivia</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========== WEDNESDAY - GENERAL TRIVIA SECT ====================== -->
+
+        <section class="events-wed-section">
+
+            <div class="container">
+
+                <div class="intro">
+
+                    <p class="bottom-gap">Think your a trivia wizard? Grab some witty friends and come test your knowledge against other teams for a chance to win a Green Pig Gift Certificate or just plain ol' bragging rights! Call to reserve your team's spot now. Oh by the way...Daisy can be quite ferocious so if this isn't the first question you'd better put your phone away...</p>
+
+                    <a href="https://www.facebook.com/trivianight" target="_blank" class="button">1st question</a>
+
+                </div>
+                
+                <script>instafeed('greenpigtrivia');</script>
+
+                <div class="row">
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigtrivia0" src="assets/img/trivia/trivia_300w_1.jpg" alt="Paint Nite painters.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigtrivia1" src="assets/img/trivia/trivia_300w_2.jpg" alt="Paint Nite painters.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigtrivia2" src="assets/img/trivia/trivia_300w_3.jpg" alt="Paint Nite painters.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigtrivia3" src="assets/img/trivia/trivia_300w_4.jpg" alt="Paint Nite painters.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigtrivia4" src="assets/img/trivia/trivia_300w_5.jpg" alt="Paint Nite painters.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigtrivia5" src="assets/img/trivia/trivia_300w_6.jpg" alt="Paint Nite painters.">
+                        </div>
+
+                    </div>
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- wed section -->
+
+    </div> <!-- wed -->
+   
+   
+   
+    <!-- =========== THURSDAY - KARAOKE ====================== -->
+
+    <div id="event-thu">
+
+        <!-- =========== THURSDAY - KARAOKE BANNER ====================== -->
+
+        <section class="banner events-thur-banner sub-menu-banner-gap">
+
+            <div class="banner-container">
+
+                <h3>Karaoke</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========== THURSDAY - KARAOKE SECT ====================== -->
+
+        <section class="events-thur-section">
+
+            <div class="container">
+
+                <p>Got the courage to sing your heart out before an audience? Come kick it with Nirvana (your hostess) and show everybody your impressive singing voice or give a shameless performance for all to enjoy! Singing starts @ 9 so come early to get your spot.</p>             
+                
+                <script>instafeed('greenpigkaraoke');</script>
+
+                <div class="row">
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigkaraoke0" src="./assets/img/karaoke-1_300w.jpg" alt="Karaoke Singer.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigkaraoke1" src="./assets/img/karaoke_group_sing_300w.jpg" alt="Karaoke group singing.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigkaraoke2" src="./assets/img/karaoke-2_300w.jpg" alt="Karaoke Singer.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigkaraoke3" src="./assets/img/karaoke-3_300w.jpg" alt="Karaoke Singer.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigkaraoke4" src="./assets/img/karaoke-4_300w.jpg" alt="Karaoke Singer.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigkaraoke5" src="./assets/img/karaoke-1_300w.jpg" alt="Karaoke Singer.">
+                        </div>
+
+                    </div>
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- thur section -->
+
+    </div> <!-- thur -->
+   
+   
+   
+    <!-- =========== FRIDAY - LIVE MUSIC ====================== -->
+
+    <div id="event-fri">
+
+        <!-- =========== FRIDAY - LIVE MUSIC BANNER ====================== -->
+
+        <section class="banner events-fri-banner sub-menu-banner-gap">
+
+            <div class="banner-container">
+
+                <h3>Live Music</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========== FRIDAY - LIVE MUSIC SECT ====================== -->
+
+        <section class="events-fri-section">
+
+            <div class="container">
+
+                <p>If you're looking for some good Friday night fun, look no further. Every Friday at 10pm we have live music from a range of genres. So grab your friends and come have a night to remember.</p>         
+                
+                <script>instafeed('greenpiglive');</script>
+
+                <div class="row">
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpiglive0" src="assets/img/live_music/live_300w_6.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpiglive1" src="assets/img/live_music/live_300w_2.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpiglive2" src="assets/img/live_music/live_300w_3.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpiglive3" src="assets/img/live_music/live_300w_4.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpiglive4" src="assets/img/live_music/live_300w_5.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpiglive5" src="assets/img/live_music/live_300w_1.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- fri section -->
+
+    </div> <!-- fri -->
+   
+   
+   
+    <!-- =========== SATURDAY - DJ LATU ====================== -->
+
+    <div id="event-sat">
+
+        <!-- =========== SATURDAY - DJ LATU BANNER ====================== -->
+
+        <section class="banner events-sat-banner sub-menu-banner-gap">
+
+            <div class="banner-container">
+
+                <h3>DJ Latu</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========== SATURDAY - DJ LATU SECT ====================== -->
+
+        <section class="events-sat-section">
+
+            <div class="container">
+
+                <p>Say What?! DJ Latu from U92? That's right. Come grab some drinks with your friends and dance the night away, while kickin with local sensation Latu!</p>   
+                
+                <script>instafeed('greenpigdjlatu');</script>
+
+                <div class="row">
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigdjlatu0" src="assets/img/dj_latu/latu_300w_1.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigdjlatu1" src="assets/img/dj_latu/latu_300w_2.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigdjlatu2" src="assets/img/dj_latu/latu_300w_3.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigdjlatu3" src="assets/img/dj_latu/latu_300w_4.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigdjlatu4" src="assets/img/dj_latu/latu_300w_5.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigdjlatu5" src="assets/img/dj_latu/latu_300w_6.jpg" alt="live music.">
+                        </div>
+
+                    </div>
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- sat section -->
+
+    </div> <!-- sat -->
+   
+   
+   
+    <!-- =========== SUNDAY - BREAKFAST BUFFET ====================== -->
+
+    <div id="event-sun">
+
+        <!-- =========== SUNDAY - BREAKFAST BUFFET BANNER ====================== -->
+
+        <section class="banner events-sun-banner sub-menu-banner-gap">
+
+            <div class="banner-container">
+
+                <h3>Breakfast Buffet / Adult Trivia</h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========== SUNDAY - BREAKFAST BUFFET SECT ====================== -->
+
+        <section class="events-sun-section">
+
+            <div class="container">
+
+                <p>Our Breakfast Buffet starts at 10am and goes to 2pm so come grab some grub with a delicious Mimosa or Bloody Mary. We have omelets cooked to order and a variety of breakfast items including Vegan.</p>
+                
+                <script>instafeed('greenpigbrunch');</script>
+
+                <div class="row">
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigbrunch0" src="./assets/img/bacon_300w.jpg" alt="Breakfast buffet - bacon.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigbrunch1" src="./assets/img/french_toast_300w.jpg" alt="Breakfast buffet - french toast.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigbrunch2" src="./assets/img/hashbrowns_300w.jpg" alt="Breakfast buffet - biscuits and hashbrowns.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigbrunch3" src="./assets/img/sweets_300w.jpg" alt="Breakfast buffet - fruits and muffins.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigbrunch4" src="./assets/img/omlets_300w.jpg" alt="Breakfast buffet - omlets.">
+                        </div>
+
+                    </div>
+
+                    <div class="col col-sm-6 col-lg-4">
+
+                        <div class="gallery-item gallery-item-sm">
+                            <img id="greenpigbrunch5" src="./assets/img/street_tacos_300w.jpg" alt="Breakfast buffet - carnitas street tacos.">
+                        </div>
+
+                    </div>
+
+                </div> <!-- row -->
+
+            </div> <!-- container -->
+
+        </section> <!-- sun section -->
+
+    </div> <!-- sun -->
+
+
+
+  
+    
+    <!-- ======= FOOTER ========================== -->
+
+    <div class="fade-up">
+
+        <footer>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col col-md-4">
+
+                        <h4>Hours</h4>
+
+                        <ul class="hours">
+                            <li><i class="fa fa-clock-o"></i> Mon-Sat 11:00a - 1:00a</li>
+                            <li><i class="fa fa-tv"></i> Sun 10:00a - 1:00a</li>
+                            <li><i class="fa fa-phone"></i> Phone : (801)532-7441</li>
+                            <li><i class="fa fa-address-book"></i> <a target="_blank" href="https://www.google.com/maps/place/The+Green+Pig+Pub/@40.7609285,-111.8920536,17z/data=!3m1!4b1!4m5!3m4!1s0x8752f51053a20201:0x854e30471263b928!8m2!3d40.7609285!4d-111.8898649">31 E 400 S, Salt Lake City</a></li>
+                        </ul> 
+
+                    </div>
+
+                    <div class="col col-md-4">
+
+                        <h4>Follow Us</h4>
+
+                        <div class="row social">
+
+                            <div class="col col-xs-4">
+
+                                <a class="social-badge facebook" href=""><i class="fab fa-facebook-f"></i></a>
+
+                            </div> <!-- col -->
+
+                            <div class="col col-xs-4">
+
+                                <a class="social-badge instagram" href=""><i class="fab fa-instagram"></i></a>
+
+                            </div> <!-- col -->
+
+                            <div class="col col-xs-4">
+
+                                <a class="social-badge twitter" href=""><i class="fab fa-twitter"></i></a>
+
+                            </div> <!-- col -->
+
+                        </div> <!-- row -->
+
+                    </div> <!-- col -->
+
+                    <div class="col col-md-4">
+
+                        <h4>Location</h4>
+
+                        <div id="map-footer"></div>   
+
+                    </div>
+
+                </div> <!-- row -->
+
+                <p>Site Creator: <a href="http://www.mckaywebdesign.com/home/index/" target="_blank">Caleb Anderson</a></p>
+                <p>Copyright &copy; 2018 - The Green Pig Pub</p>
+
+            </div> <!-- container -->
+
+        </footer>
+
+    </div>
+    
+   
+    
+    <!-- ======= JAVASCRIPT ========================== -->
+      
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4eaFIZjEFVyTS2IqNtCbIL4960EfhByw&callback=initMap">
+    </script>
+    <script src="./assets/js/mobile_nav.js"></script>
+    <script src="./assets/js/sub-nav.js"></script>
+    <script src="./assets/js/events-nav.js"></script>
+    <script src="./assets/js/map-footer.js"></script>
+    <script src="./assets/js/fade_on_scroll.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            var day = [0, 1, 2, 3, 4, 5, 6];
+            var daysInOrder = [0, 1, 2, 3, 4, 5, 6];
+
+            var curr = new Date; // get current date
+            var first = curr.getDate(); // set date to starting day
+            var today = curr.getDay(); // set day number (i.e. 0-6) today
+            var subday = 0; // set start point for days before today
+
+            // set 7 days into array day
+            for(var i = 0; i < 7; i++) {
+                var next = new Date(curr.getTime());
+                next.setDate(first + i);
+                day[i] = next.getDate();
+            }  
+
+            // set daysInOrder from start day to day 6 then set subdays to next week dates
+            for(var i = 0; i < 7; i++) {
+                if (today < 7) {
+                    daysInOrder[today] = day[i];
+                    today++;
+                } else {
+                    daysInOrder[subday] = day[i];
+                    subday++;
+                }
+            }
+
+            document.getElementById("mon-date").innerHTML = daysInOrder[1];
+            document.getElementById("tue-date").innerHTML = daysInOrder[2];
+            document.getElementById("wed-date").innerHTML = daysInOrder[3];
+            document.getElementById("thu-date").innerHTML = daysInOrder[4];
+            document.getElementById("fri-date").innerHTML = daysInOrder[5];
+            document.getElementById("sat-date").innerHTML = daysInOrder[6];
+            document.getElementById("sun-date").innerHTML = daysInOrder[0];
+
+        });
+
+    </script>
+    
+</body>
+</html>

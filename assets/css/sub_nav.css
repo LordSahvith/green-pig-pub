@@ -1,0 +1,73 @@
+.sub-fixed {
+    position: fixed;
+    top: 66px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+.sub-menu {
+    z-index: 1;
+}
+
+.sub-menu-btn {
+    background: none!important;
+    color: white;
+    border: none; 
+    margin-top: 30px;
+    font: inherit;
+    cursor: pointer; 
+    font-size: 2.2rem;
+    transition: all .3s;
+}
+
+@media screen and (min-width: 768px) {
+    .sub-menu-btn {
+        margin-top: 0;
+        padding: 40px;
+        font-size: 1.3rem;
+    }
+}
+
+
+.sub-menu-btn:hover {
+    color: #4dbb04;
+}
+
+.menu-icon {
+    position: absolute;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 2rem;
+    transition: all .4s;
+}
+
+.menu-icon i,
+.events-icon i {
+    transition: all .4s;
+}
+
+.menu-icon:hover,
+.events-icon:hover {
+    cursor: pointer;
+}
+
+.menu-icon:hover i,
+.events-icon:hover i {
+    color: #4dbb04; 
+}
+
+#mobile-menu {
+    right: 0;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    margin-top: -20%;
+    right: 60px;
+}
+
+.main-menu {
+    position: relative;
+    margin-top: -15px;
+}

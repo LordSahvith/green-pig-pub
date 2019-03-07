@@ -11,15 +11,13 @@ function toggleNav() {
   }
 }
 
-(function ($) {
-  $(document).ready(function () {
+$(document).ready(function () {
 
-    var $toggleButton = $('.toggle-button');
+  var $toggleButton = $('.toggle-button');
 
-    // Hamburger button
-    $toggleButton.on('click', function () {
-      $(this).toggleClass('button-open');
-    });
-
+  // Hamburger button
+  $toggleButton.on('click', function () {
+    $(this).toggleClass('button-open');
   });
-})(jQuery);
+
+});

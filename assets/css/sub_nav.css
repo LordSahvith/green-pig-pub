@@ -71,3 +71,20 @@
     position: relative;
     margin-top: -15px;
 }
+
+.form-btn {
+  padding: 40px 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-btn {
+    padding: 35px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .form-btn {
+    padding: 40px;
+  }
+}
+

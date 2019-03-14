@@ -3,9 +3,9 @@
     initMap();
   });
 
-  var d = new Date();
-  var n = d.getFullYear();
-  document.getElementById("year").innerHTML = n;
+  var date = new Date();
+  var year = date.getFullYear();
+  document.getElementById("year").innerHTML = year;
 
   function initMap() {
     var uluru = { lat: 40.7609211, lng: -111.8898534 };

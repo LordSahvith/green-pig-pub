@@ -4,45 +4,45 @@
 */
 
 .menu-item {
-    text-align: left;
-    padding-top: 40px;
+  text-align: left;
+  padding-top: 40px;
 }
 
 .menu-item h4 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .menu-item div:nth-child(1) {
-    margin-right: -20px;
+  margin-right: -20px;
 }
 
 .menu-item div:nth-child(2) {
-    padding-right: 0px;
-    margin-right: 20px;
+  padding-right: 0px;
+  margin-right: 20px;
 }
 
 .menu-item div:nth-child(2) {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .last-item {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .last-item div:nth-child(2) {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 980px) {    
-    .last-item { margin-left: 27%; }    
+  .last-item { margin-left: 27%; }    
 }
 
 
 .pig-favorite,
 .form-choice {
-    color: #4dbb04;
+  color: #4dbb04;
 }
 
 .additions {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }

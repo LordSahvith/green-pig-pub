@@ -6,21 +6,21 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-    height: 100%;
-    background: #111;
-    color: #FFF;
-    font-family: 'Bitter', 'Open Sans', sans-serif;
-    letter-spacing: .05rem;
+  height: 100%;
+  background: #111;
+  color: #FFF;
+  font-family: 'Bitter', 'Open Sans', sans-serif;
+  letter-spacing: .05rem;
 }
 
 a {
-    text-decoration: none;
-    color: #FFF;
+  text-decoration: none;
+  color: #FFF;
 }
 
 
@@ -39,37 +39,37 @@ h4 { font-size: 1.4rem; }
 h5 { font-size: 1.3rem; padding-bottom: 25px; }
 
 .header-gap-top {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 section div h3,
 section div p {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 section div p:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .bottom-gap {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
-        
+      
 .divider {
-    width: 20%;
-    border-top: solid 1px green;
-    margin: 0 auto;
-    padding-bottom: 40px;
-    margin-top: 20px;
+  width: 20%;
+  border-top: solid 1px green;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  margin-top: 20px;
 }
 
 .intro-title{
-    padding-bottom:10px;
-    padding-top: 20px;
+  padding-bottom:10px;
+  padding-top: 20px;
 }
 
 .intro-content {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 button,
@@ -78,10 +78,10 @@ a,
 a:focus,
 input[type="submit"],
 input[type="submit"]:focus {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .form-choice {
-  color: #4dbb04;
+color: #4dbb04;
 }

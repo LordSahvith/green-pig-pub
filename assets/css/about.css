@@ -1,38 +1,38 @@
 .hero-about {
-    background: url(../img/about.jpg) center center no-repeat;
-    background-size: cover;
+  background: url(../img/about.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .management {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .manager-name {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 .manager-title {
-    margin-top:  15px;
-    padding-bottom: 0;
-    font-size: 1.2rem;
+  margin-top:  15px;
+  padding-bottom: 0;
+  font-size: 1.2rem;
 }
 
 .manager-content .divider {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .manager-content {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .about-pub-banner {
-    background: url(../img/pig_pub.JPG) center center no-repeat;
-    background-size: cover;
-    margin-top: -50px;
+  background: url(../img/pig_pub.JPG) center center no-repeat;
+  background-size: cover;
+  margin-top: -50px;
 }
 
 .about-patio-banner {
-    background: url(../img/patio.jpg) center center no-repeat;
-    background-size: cover;
+  background: url(../img/patio.jpg) center center no-repeat;
+  background-size: cover;
 }

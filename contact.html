@@ -153,21 +153,67 @@
         <div class="fade-left">
 
           <div class="col col-md-6 contact-form">
+            <h3>Looking for answers?</h3>
+            <nav>
+              <ul class="main-nav main-menu">
+                <div class="fade-up">
+                  <li><button id="general-email-btn" class="sub-menu-btn form-btn form-choice">General</button></li>
+                  <li><button id="band-email-btn" class="sub-menu-btn form-btn">Band</button></li>
+                  <li><button id="reservation-email-btn" class="sub-menu-btn form-btn">Reservation</button></li>
+                </div>
+              </ul>
+            </nav>
 
-            <form action="" method="post">
+            <div id="general-email" style="margin-top: 80px;">
+              <form class="form" action="MAILTO:gppgeneral@gmail.com" method="post">
 
-              <input type="text" id="name" placeholder="Your name">
-              <input type="text" id="email" placeholder="Your email">
-              <input type="text" id="subject" placeholder="The Subject">
-              <textarea id="message" placeholder="Your Message" rows="7"></textarea>
+                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="email" placeholder="Your email">
+                <input type="text" id="subject" placeholder="The Subject">
+                <textarea id="message" placeholder="Your Message" rows="7"></textarea>
 
-              <div class="col">
+                <div class="col">
 
-                <input type="button" value="Send" class="button button-form">
+                  <input type="button" value="Send" class="button button-form">
 
-              </div>
+                </div>
 
-            </form>
+              </form>
+            </div>
+
+            <div id="band-email" style="margin-top: 80px;">
+              <form class="form" action="MAILTO:gppband@gmail.com" method="post">
+
+                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="email" placeholder="Your email">
+                <input type="text" id="subject" placeholder="The Subject">
+                <textarea id="message" placeholder="Your Message" rows="7"></textarea>
+
+                <div class="col">
+
+                  <input type="button" value="Send" class="button button-form">
+
+                </div>
+
+              </form>
+            </div>
+
+            <div id="reservation-email" style="margin-top: 80px;">
+              <form class="form" action="MAILTO:gppreservation@gmail.com" method="post">
+
+                <input type="text" id="name" placeholder="Your name">
+                <input type="text" id="email" placeholder="Your email">
+                <input type="text" id="subject" placeholder="The Subject">
+                <textarea id="message" placeholder="Your Message" rows="7"></textarea>
+
+                <div class="col">
+
+                  <input type="button" value="Send" class="button button-form">
+
+                </div>
+
+              </form>
+            </div>
 
           </div> <!-- col -->
 

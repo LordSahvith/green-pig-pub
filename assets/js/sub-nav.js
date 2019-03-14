@@ -15,6 +15,8 @@ $(document).ready(function () {
   $('#menu-beers').hide();
   $('#menu-wines').hide();
   $('#menu-daily-specials').hide();
+  $('#band-email').hide();
+  $('#reservation-email').hide();
 
   // food menu fade in/out        
   foodLinks.click(function () {
@@ -83,6 +85,42 @@ $(document).ready(function () {
     $(targetSection).delay(490).fadeIn(500);
 
   });
+
+});
+
+// food menu fade in/out        
+$('.form-btn').click(function () {
+  var self = $(this),
+    targetSection = "#" + self.attr('id').slice(0, self.attr('id').length - 4);
+
+  var prev = $('.form-choice');
+  var current = $(this);
+  prev.removeClass('form-choice');
+  current.addClass('form-choice');
+
+  console.log(targetSection);
+
+  // $('#general-email').fadeOut(500);
+  // $('#band-email').fadeOut(500);
+  // $('#reservation-email').fadeOut(500);
+  // $(targetSection).delay(490).fadeIn(500);
+  $('.form').fadeOut(500);
+  $('.form').fadeIn(500);
+
+  switch (targetSection) {
+    case '#general-email':
+      $('.form').attr("action", "MAILTO:gppgeneral@gmail.com");
+      break;
+    case '#band-email':
+      $('.form').attr("action", "MAILTO:gppband@gmail.com");
+      break;
+    case '#reservation-email':
+      $('.form').attr("action", "MAILTO:gppreservation@gmail.com");
+      break;
+    default:
+      $('.form').attr("action", "MAILTO:gppgeneral@gmail.com");
+      break;
+  }
 
 });
 

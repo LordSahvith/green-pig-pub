@@ -154,8 +154,32 @@
 
           <div class="col col-md-6 contact-form">
             <h3>Looking for answers?</h3>
-            <nav>
-              <ul class="main-nav main-menu">
+
+            <!-- =========== SUB MENU ====================== -->
+
+            <nav class="sub-menu">
+              <div id="mobile-menu" class="overlay">
+                <div class="overlay-content" style="top: 0; margin-top: 0;">
+                  <a href="javascript:void(0)" class="closebtn" style="top: 0; margin-top: 0;" onclick="closeNav()">&times;</a>
+                  <div class="container">
+                    <li><button id="general-email-btn" class="sub-menu-btn form-btn"
+                        onclick="closeNav()">General</button>
+                    </li>
+                    <li><button id="band-email-btn" class="sub-menu-btn form-btn" onclick="closeNav()">Band</button>
+                    </li>
+                    <li><button id="reservation-email-btn" class="sub-menu-btn form-btn"
+                        onclick="closeNav()">Reservation</button></li>
+                  </div>
+                </div>
+              </div> <!-- mobile-nav -->
+
+              <div class="mobile-icon menu-icon" style="width: 95%;" onclick="toggleMenu()">
+                <div class="fade-up">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <ul class="main-nav main-menu" style="display: flex; justify-content: space-between;">
                 <div class="fade-up">
                   <li><button id="general-email-btn" class="sub-menu-btn form-btn form-choice">General</button></li>
                   <li><button id="band-email-btn" class="sub-menu-btn form-btn">Band</button></li>

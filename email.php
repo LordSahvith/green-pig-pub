@@ -16,12 +16,12 @@ echo "Invalid Sender's Email";
 else{
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-$headers = 'From:'. $email2 . "rn"; // Sender's Email
-$headers .= 'Cc:'. $email2 . "rn"; // Carbon copy to Sender
+$headers = 'From:'. $email . "rn"; // Sender's Email
+$headers .= 'Cc:'. $email . "rn"; // Carbon copy to Sender
 // Message lines should not exceed 70 characters (PHP rule), so wrap it
 $message = wordwrap($message, 70);
 // Send Mail By PHP Mail Function
-mail("recievers_mail_id@xyz.com", $subject, $message, $headers);
+mail("bulletproofchild@gmail.com", $subject, $message, $headers);
 echo "Your mail has been sent successfuly ! Thank you for your feedback";
 }
 }
